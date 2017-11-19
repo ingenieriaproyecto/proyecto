@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/11/2017 01:41:32 PM by Hibernate Tools 5.1.0.Final -->
+<hibernate-mapping>
+    <class name="com.proyecto.demo.modelo.Tr000004" table="tr000004" catalog="ingenieria" optimistic-lock="version">
+        <composite-id name="id" class="com.proyecto.demo.modelo.Tr000004Id">
+            <key-property name="consecutivo" type="java.lang.Integer">
+                <column name="Consecutivo" />
+            </key-property>
+            <key-property name="codEmpresa" type="java.lang.String">
+                <column name="Cod_Empresa" length="2" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="tg000003" class="com.proyecto.demo.modelo.Tg000003" update="false" insert="false" fetch="select">
+            <column name="Cod_Empresa" length="2" not-null="true" />
+        </many-to-one>
+        <many-to-one name="tp000003" class="com.proyecto.demo.modelo.Tp000003" fetch="select">
+            <column name="Codi_Eps" length="3" />
+        </many-to-one>
+        <many-to-one name="tp000004" class="com.proyecto.demo.modelo.Tp000004" fetch="select">
+            <column name="Codi_Arp" length="3" />
+        </many-to-one>
+        <many-to-one name="tp000005" class="com.proyecto.demo.modelo.Tp000005" fetch="select">
+            <column name="Codi_Afp" length="3" />
+        </many-to-one>
+        <many-to-one name="tp000006" class="com.proyecto.demo.modelo.Tp000006" fetch="select">
+            <column name="Codi_Caja" length="3" />
+        </many-to-one>
+        <property name="fechaPago" type="java.util.Date">
+            <column name="FechaPago" length="19" />
+        </property>
+        <property name="horaPago" type="java.util.Date">
+            <column name="HoraPago" length="19" />
+        </property>
+        <property name="fechaIngPagoSistema" type="java.util.Date">
+            <column name="FechaIngPagoSistema" length="19" />
+        </property>
+        <property name="horaIngPagoSistema" type="java.util.Date">
+            <column name="HoraIngPagoSistema" length="19" />
+        </property>
+        <property name="periodo" type="java.lang.String">
+            <column name="Periodo" length="10" />
+        </property>
+        <property name="periodoRp" type="java.lang.String">
+            <column name="PeriodoRP" length="10" />
+        </property>
+        <property name="identificacion" type="java.lang.String">
+            <column name="Identificacion" length="15" />
+        </property>
+        <property name="valorTotal" type="java.lang.Double">
+            <column name="ValorTotal" scale="4" />
+        </property>
+        <property name="valorenletras" type="java.lang.String">
+            <column name="Valorenletras" />
+        </property>
+        <property name="valorSalario" type="java.lang.Double">
+            <column name="valorSalario" scale="4" />
+        </property>
+        <property name="valAdmonAfprec" type="java.lang.Double">
+            <column name="Val_AdmonAFPRec" scale="4" />
+        </property>
+        <property name="valAdmonRec" type="java.lang.Double">
+            <column name="Val_AdmonRec" scale="4" />
+        </property>
+        <property name="comisionAsesor" type="java.lang.Double">
+            <column name="ComisionAsesor" scale="4" />
+        </property>
+        <property name="riesgos" type="java.lang.Integer">
+            <column name="Riesgos" />
+        </property>
+        <property name="porcRiesgo" type="java.lang.Double">
+            <column name="PorcRiesgo" scale="4" />
+        </property>
+        <property name="ibc" type="java.lang.Double">
+            <column name="Ibc" scale="4" />
+        </property>
+        <property name="diasCotizadosEps" type="java.lang.Integer">
+            <column name="DiasCotizadosEPS" />
+        </property>
+        <property name="valorDiasCotizadosEps" type="java.lang.Double">
+            <column name="ValorDiasCotizadosEPS" scale="4" />
+        </property>
+        <property name="diasCotizadosArp" type="java.lang.Integer">
+            <column name="DiasCotizadosARP" />
+        </property>
+        <property name="valorDiasCotizadosArp" type="java.lang.Double">
+            <column name="ValorDiasCotizadosARP" scale="4" />
+        </property>
+        <property name="valorPagoUpc" type="java.lang.Double">
+            <column name="ValorPagoUPC" scale="4" />
+        </property>
+        <property name="valorPagoMora" type="java.lang.Double">
+            <column name="ValorPagoMora" scale="4" />
+        </property>
+        <property name="valorMensajeriaRecibo" type="java.lang.Double">
+            <column name="ValorMensajeriaRecibo" scale="4" />
+        </property>
+        <property name="diasCotizadosAfp" type="java.lang.Integer">
+            <column name="DiasCotizadosAFP" />
+        </property>
+        <property name="valorDiasCotizadosAfp" type="java.lang.Double">
+            <column name="ValorDiasCotizadosAFP" scale="4" />
+        </property>
+        <property name="valorFpsolidaridad" type="java.lang.Double">
+            <column name="ValorFPSolidaridad" scale="4" />
+        </property>
+        <property name="valorFpsubsistencia" type="java.lang.Double">
+            <column name="ValorFPSubsistencia" scale="4" />
+        </property>
+        <property name="diasCotizadosCaja" type="java.lang.Integer">
+            <column name="DiasCotizadosCaja" />
+        </property>
+        <property name="valorDiasCotizadosCaja" type="java.lang.Double">
+            <column name="ValorDiasCotizadosCaja" scale="4" />
+        </property>
+        <property name="valorSena" type="java.lang.Double">
+            <column name="ValorSena" scale="4" />
+        </property>
+        <property name="valorIcbf" type="java.lang.Double">
+            <column name="ValorIcbf" scale="4" />
+        </property>
+        <property name="valorOtrosServicios" type="java.lang.Double">
+            <column name="ValorOtrosServicios" scale="4" />
+        </property>
+        <property name="pagoEfectivo" type="java.lang.String">
+            <column name="PagoEfectivo" not-null="true" />
+        </property>
+        <property name="pagoCheque" type="java.lang.String">
+            <column name="PagoCheque" not-null="true" />
+        </property>
+        <property name="pagoConsignacion" type="java.lang.String">
+            <column name="PagoConsignacion" not-null="true" />
+        </property>
+        <property name="valorMora" type="java.lang.Double">
+            <column name="ValorMora" scale="4" />
+        </property>
+        <property name="valorEfectivo" type="java.lang.Double">
+            <column name="ValorEfectivo" scale="4" />
+        </property>
+        <property name="codBancoCheque" type="java.lang.String">
+            <column name="CodBancoCheque" length="2" />
+        </property>
+        <property name="numCheque" type="java.lang.String">
+            <column name="NumCheque" length="20" />
+        </property>
+        <property name="valorCheque" type="java.lang.Double">
+            <column name="ValorCheque" scale="4" />
+        </property>
+        <property name="codBancoConsignacion" type="java.lang.String">
+            <column name="CodBancoConsignacion" length="2" />
+        </property>
+        <property name="numConsignacion" type="java.lang.String">
+            <column name="NumConsignacion" length="50" />
+        </property>
+        <property name="valorConsignacion" type="java.lang.Double">
+            <column name="ValorConsignacion" scale="4" />
+        </property>
+        <property name="faltanteConsignacion" type="java.lang.Double">
+            <column name="FaltanteConsignacion" scale="4" />
+        </property>
+        <property name="facturado" type="java.lang.String">
+            <column name="Facturado" not-null="true" />
+        </property>
+        <property name="cuota" type="java.lang.String">
+            <column name="Cuota" not-null="true" />
+        </property>
+        <property name="cuotaporcobrar" type="java.lang.String">
+            <column name="Cuotaporcobrar" not-null="true" />
+        </property>
+        <property name="afiliacion" type="java.lang.String">
+            <column name="Afiliacion" not-null="true" />
+        </property>
+        <property name="valorAfiliacion" type="java.lang.Double">
+            <column name="ValorAfiliacion" scale="4" />
+        </property>
+        <property name="afiliacionporcobrar" type="java.lang.String">
+            <column name="Afiliacionporcobrar" not-null="true" />
+        </property>
+        <property name="reactivacion" type="java.lang.String">
+            <column name="Reactivacion" not-null="true" />
+        </property>
+        <property name="valorReactivacion" type="java.lang.Double">
+            <column name="ValorReactivacion" scale="4" />
+        </property>
+        <property name="reactivacionporcobrar" type="java.lang.String">
+            <column name="Reactivacionporcobrar" not-null="true" />
+        </property>
+        <property name="pagoRetiro" type="java.lang.String">
+            <column name="PagoRetiro" not-null="true" />
+        </property>
+        <property name="pagoRetiroporcobrar" type="java.lang.String">
+            <column name="PagoRetiroporcobrar" not-null="true" />
+        </property>
+        <property name="recibPrimeraEps" type="java.lang.String">
+            <column name="RecibPrimeraEPS" not-null="true" />
+        </property>
+        <property name="recibPrimeraArp" type="java.lang.String">
+            <column name="RecibPrimeraARP" not-null="true" />
+        </property>
+        <property name="recibPrimeraAfp" type="java.lang.String">
+            <column name="RecibPrimeraAFP" not-null="true" />
+        </property>
+        <property name="recibPrimeraCaja" type="java.lang.String">
+            <column name="RecibPrimeraCaja" not-null="true" />
+        </property>
+        <property name="eps" type="java.lang.String">
+            <column name="EPS" not-null="true" />
+        </property>
+        <property name="arp" type="java.lang.String">
+            <column name="ARP" not-null="true" />
+        </property>
+        <property name="afp" type="java.lang.String">
+            <column name="AFP" not-null="true" />
+        </property>
+        <property name="caja" type="java.lang.String">
+            <column name="Caja" not-null="true" />
+        </property>
+        <property name="otros" type="java.lang.String">
+            <column name="Otros" not-null="true" />
+        </property>
+        <property name="planilladoEps" type="java.lang.String">
+            <column name="PlanilladoEPS" not-null="true" />
+        </property>
+        <property name="planilladoArp" type="java.lang.String">
+            <column name="PlanilladoARP" not-null="true" />
+        </property>
+        <property name="planilladoAfp" type="java.lang.String">
+            <column name="PlanilladoAFP" not-null="true" />
+        </property>
+        <property name="planilladoCaja" type="java.lang.String">
+            <column name="PlanilladoCaja" not-null="true" />
+        </property>
+        <property name="anulado" type="java.lang.String">
+            <column name="Anulado" not-null="true" />
+        </property>
+        <property name="codUsuario" type="java.lang.String">
+            <column name="CodUsuario" length="15" />
+        </property>
+        <property name="idenEmpresa" type="java.lang.String">
+            <column name="IdenEmpresa" length="15" />
+        </property>
+        <property name="reciboCuentaCobro" type="java.lang.String">
+            <column name="ReciboCuentaCobro" not-null="true" />
+        </property>
+        <property name="numCuentaCobro" type="java.lang.String">
+            <column name="Num_CuentaCobro" length="10" />
+        </property>
+        <property name="numPersonas" type="java.lang.String">
+            <column name="Num_Personas" length="10" />
+        </property>
+        <property name="codigoPagoMes" type="java.lang.Integer">
+            <column name="CodigoPagoMes" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/11/2017 01:41:32 PM by Hibernate Tools 5.1.0.Final -->
+<hibernate-mapping>
+    <class name="com.proyecto.demo.modelo.Tg000002" table="tg000002" catalog="ingenieria" optimistic-lock="version">
+        <id name="codCiudad" type="java.lang.String">
+            <column name="Cod_Ciudad" length="8" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="tg000004" class="com.proyecto.demo.modelo.Tg000004" fetch="select">
+            <column name="Cod_Depto" length="8" />
+        </many-to-one>
+        <property name="desCiudad" type="java.lang.String">
+            <column name="Des_Ciudad" length="50" />
+        </property>
+        <set name="tg000003s" table="tg000003" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Ciudad" length="8" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tg000003" />
+        </set>
+        <set name="tp000001s" table="tp000001" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Ciud_Documento" length="8" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tp000001" />
+        </set>
+    </class>
+</hibernate-mapping>

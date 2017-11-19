@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/11/2017 01:41:32 PM by Hibernate Tools 5.1.0.Final -->
+<hibernate-mapping>
+    <class name="com.proyecto.demo.modelo.Tlp00003" table="tlp00003" catalog="ingenieria" optimistic-lock="version">
+        <composite-id name="id" class="com.proyecto.demo.modelo.Tlp00003Id">
+            <key-property name="numPlanilla" type="java.lang.String">
+                <column name="Num_Planilla" length="10" />
+            </key-property>
+            <key-property name="codEmpresa" type="java.lang.String">
+                <column name="Cod_Empresa" length="2" />
+            </key-property>
+        </composite-id>
+        <property name="codEmpresaEmp" type="java.lang.String">
+            <column name="Cod_EmpresaEmp" length="3" not-null="true" />
+        </property>
+        <property name="planillaEps" type="java.lang.String">
+            <column name="PlanillaEPS" not-null="true" />
+        </property>
+        <property name="planillaArp" type="java.lang.String">
+            <column name="PlanillaARP" not-null="true" />
+        </property>
+        <property name="planillaAfp" type="java.lang.String">
+            <column name="PlanillaAFP" not-null="true" />
+        </property>
+        <property name="ing" type="java.lang.String">
+            <column name="ING" not-null="true" />
+        </property>
+        <property name="ret" type="java.lang.String">
+            <column name="RET" not-null="true" />
+        </property>
+        <one-to-one name="tlp00001" class="com.proyecto.demo.modelo.Tlp00001"></one-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/11/2017 01:41:32 PM by Hibernate Tools 5.1.0.Final -->
+<hibernate-mapping>
+    <class name="com.proyecto.demo.modelo.Tp000005" table="tp000005" catalog="ingenieria" optimistic-lock="version">
+        <id name="codAfp" type="java.lang.String">
+            <column name="Cod_AFP" length="3" />
+            <generator class="assigned" />
+        </id>
+        <property name="nitAfp" type="java.lang.String">
+            <column name="Nit_AFP" length="15" not-null="true" />
+        </property>
+        <property name="tipoDocumentoAfp" type="java.lang.String">
+            <column name="Tipo_DocumentoAFP" length="2" />
+        </property>
+        <property name="dvafp" type="java.lang.String">
+            <column name="DVAFP" length="2" />
+        </property>
+        <property name="codigoAfp" type="java.lang.String">
+            <column name="CodigoAFP" length="6" />
+        </property>
+        <property name="nombreAfp" type="java.lang.String">
+            <column name="Nombre_AFP" length="50" />
+        </property>
+        <property name="direccionAfp" type="java.lang.String">
+            <column name="Direccion_AFP" length="40" />
+        </property>
+        <property name="telefonoAfp" type="java.lang.String">
+            <column name="Telefono_AFP" length="10" />
+        </property>
+        <property name="faxAfp" type="java.lang.String">
+            <column name="Fax_AFP" length="10" />
+        </property>
+        <property name="emailAfp" type="java.lang.String">
+            <column name="Email_AFP" length="50" />
+        </property>
+        <property name="nomContactoAfp" type="java.lang.String">
+            <column name="Nom_ContactoAFP" length="30" />
+        </property>
+        <property name="numPerPlaniAfp" type="java.lang.String">
+            <column name="NumPerPlaniAFP" length="2" />
+        </property>
+        <set name="tp000001s" table="tp000001" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Cod_AFP" length="3" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tp000001" />
+        </set>
+        <set name="tr000004s" table="tr000004" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Codi_Afp" length="3" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tr000004" />
+        </set>
+    </class>
+</hibernate-mapping>

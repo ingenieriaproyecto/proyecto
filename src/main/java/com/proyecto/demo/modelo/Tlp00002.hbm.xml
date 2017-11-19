@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/11/2017 01:41:32 PM by Hibernate Tools 5.1.0.Final -->
+<hibernate-mapping>
+    <class name="com.proyecto.demo.modelo.Tlp00002" table="tlp00002" catalog="ingenieria" optimistic-lock="version">
+        <composite-id name="id" class="com.proyecto.demo.modelo.Tlp00002Id">
+            <key-property name="numPlanilla" type="java.lang.String">
+                <column name="Num_Planilla" length="10" />
+            </key-property>
+            <key-property name="codiEps" type="java.lang.String">
+                <column name="Codi_Eps" length="3" />
+            </key-property>
+            <key-property name="codiArp" type="java.lang.String">
+                <column name="Codi_Arp" length="3" />
+            </key-property>
+            <key-property name="codiAfp" type="java.lang.String">
+                <column name="Codi_Afp" length="3" />
+            </key-property>
+            <key-property name="codiCaja" type="java.lang.String">
+                <column name="Codi_Caja" length="3" />
+            </key-property>
+            <key-property name="cotizante" type="java.lang.String">
+                <column name="Cotizante" length="15" />
+            </key-property>
+            <key-property name="codEmpresaEmp" type="java.lang.String">
+                <column name="Cod_EmpresaEmp" length="3" />
+            </key-property>
+            <key-property name="ciuLaboralCotizante" type="java.lang.String">
+                <column name="CiuLaboral_Cotizante" length="3" />
+            </key-property>
+            <key-property name="depLaboralCotizante" type="java.lang.String">
+                <column name="DepLaboral_Cotizante" length="2" />
+            </key-property>
+            <key-property name="tipocotizante" type="java.lang.String">
+                <column name="Tipocotizante" length="2" />
+            </key-property>
+            <key-property name="subTipocotizante" type="java.lang.String">
+                <column name="SubTipocotizante" length="2" />
+            </key-property>
+            <key-property name="diasCotizados" type="java.lang.Integer">
+                <column name="DiasCotizados" />
+            </key-property>
+            <key-property name="diasCotizadosArp" type="java.lang.Integer">
+                <column name="DiasCotizadosArp" />
+            </key-property>
+            <key-property name="diasCotizadosAfp" type="java.lang.Integer">
+                <column name="DiasCotizadosAfp" />
+            </key-property>
+            <key-property name="diasCotizadosCaja" type="java.lang.Integer">
+                <column name="DiasCotizadosCaja" />
+            </key-property>
+            <key-property name="salarioBasico" type="java.lang.Double">
+                <column name="SalarioBasico" scale="4" />
+            </key-property>
+            <key-property name="salarioCIntegral" type="java.lang.String">
+                <column name="SalarioC_Integral" />
+            </key-property>
+            <key-property name="planillaEps" type="java.lang.String">
+                <column name="PlanillaEPS" />
+            </key-property>
+            <key-property name="planillaArp" type="java.lang.String">
+                <column name="PlanillaARP" />
+            </key-property>
+            <key-property name="planillaAfp" type="java.lang.String">
+                <column name="PlanillaAFP" />
+            </key-property>
+            <key-property name="planillaCaja" type="java.lang.String">
+                <column name="PlanillaCaja" />
+            </key-property>
+            <key-property name="numAuincapacidad" type="java.lang.String">
+                <column name="Num_Auincapacidad" length="15" />
+            </key-property>
+            <key-property name="valorIncapacidad" type="java.lang.Double">
+                <column name="Valor_Incapacidad" scale="4" />
+            </key-property>
+            <key-property name="numAulicenciaM" type="java.lang.String">
+                <column name="Num_AulicenciaM" length="15" />
+            </key-property>
+            <key-property name="valorLicenciaM" type="java.lang.Double">
+                <column name="Valor_LicenciaM" scale="4" />
+            </key-property>
+            <key-property name="valorUpcAdicional" type="java.lang.Double">
+                <column name="ValorUpcAdicional" scale="4" />
+            </key-property>
+            <key-property name="ingresoBaseCotizacion" type="java.lang.Double">
+                <column name="IngresoBaseCotizacion" scale="4" />
+            </key-property>
+            <key-property name="ingresoBaseCotizacionArp" type="java.lang.Double">
+                <column name="IngresoBaseCotizacionARP" scale="4" />
+            </key-property>
+            <key-property name="ingresoBaseCotizacionAfp" type="java.lang.Double">
+                <column name="IngresoBaseCotizacionAFP" scale="4" />
+            </key-property>
+            <key-property name="ingresoBaseCotizacionCaja" type="java.lang.Double">
+                <column name="IngresoBaseCotizacionCaja" scale="4" />
+            </key-property>
+            <key-property name="ingresoBaseCotizacionSenaIcbf" type="java.lang.Double">
+                <column name="IngresoBaseCotizacionSenaIcbf" scale="4" />
+            </key-property>
+            <key-property name="cotizaci&#243;nObligatoria" type="java.lang.Double">
+                <column name="Cotizaci&#243;nObligatoria" scale="4" />
+            </key-property>
+            <key-property name="cotizaci&#243;nObligatoriaArp" type="java.lang.Double">
+                <column name="Cotizaci&#243;nObligatoriaARP" scale="4" />
+            </key-property>
+            <key-property name="codigoCentroTrabajo" type="java.lang.String">
+                <column name="CodigoCentroTrabajo" length="9" />
+            </key-property>
+            <key-property name="cotizaci&#243;nObligatoriaAfp" type="java.lang.Double">
+                <column name="Cotizaci&#243;nObligatoriaAFP" scale="4" />
+            </key-property>
+            <key-property name="valorFpsolidaridad" type="java.lang.Double">
+                <column name="ValorFPSolidaridad" scale="4" />
+            </key-property>
+            <key-property name="valorFpsubsistencia" type="java.lang.Double">
+                <column name="ValorFPSubsistencia" scale="4" />
+            </key-property>
+            <key-property name="riesgos" type="java.lang.Integer">
+                <column name="Riesgos" />
+            </key-property>
+            <key-property name="porcEps" type="java.lang.Double">
+                <column name="PorcEps" scale="4" />
+            </key-property>
+            <key-property name="porcRiesgo" type="java.lang.Double">
+                <column name="PorcRiesgo" scale="4" />
+            </key-property>
+            <key-property name="porcAfp" type="java.lang.Double">
+                <column name="PorcAfp" scale="4" />
+            </key-property>
+            <key-property name="porcCaja" type="java.lang.Double">
+                <column name="PorcCaja" scale="4" />
+            </key-property>
+            <key-property name="cotizaci&#243;nObligatoriaCaja" type="java.lang.Double">
+                <column name="Cotizaci&#243;nObligatoriaCaja" scale="4" />
+            </key-property>
+            <key-property name="porcSena" type="java.lang.Double">
+                <column name="PorcSena" scale="4" />
+            </key-property>
+            <key-property name="cotizaci&#243;nObligatoriaSena" type="java.lang.Double">
+                <column name="Cotizaci&#243;nObligatoriaSena" scale="4" />
+            </key-property>
+            <key-property name="porcIcbf" type="java.lang.Double">
+                <column name="PorcICBF" scale="4" />
+            </key-property>
+            <key-property name="cotizaci&#243;nObligatoriaIcbf" type="java.lang.Double">
+                <column name="Cotizaci&#243;nObligatoriaICBF" scale="4" />
+            </key-property>
+            <key-property name="detaPlanPrimeraEps" type="java.lang.String">
+                <column name="DetaPlanPrimeraEPS" />
+            </key-property>
+            <key-property name="detaPlanPrimeraArp" type="java.lang.String">
+                <column name="DetaPlanPrimeraARP" />
+            </key-property>
+            <key-property name="detaPlanPrimeraAfp" type="java.lang.String">
+                <column name="DetaPlanPrimeraAFP" />
+            </key-property>
+            <key-property name="detaPlanPrimeraCaja" type="java.lang.String">
+                <column name="DetaPlanPrimeraCaja" />
+            </key-property>
+            <key-property name="ing" type="java.lang.String">
+                <column name="ING" length="1" />
+            </key-property>
+            <key-property name="ret" type="java.lang.String">
+                <column name="RET" length="1" />
+            </key-property>
+            <key-property name="tde" type="java.lang.String">
+                <column name="TDE" />
+            </key-property>
+            <key-property name="tae" type="java.lang.String">
+                <column name="TAE" />
+            </key-property>
+            <key-property name="codiEpsTraslado" type="java.lang.String">
+                <column name="Codi_EpsTraslado" length="15" />
+            </key-property>
+            <key-property name="tdp" type="java.lang.String">
+                <column name="TDP" />
+            </key-property>
+            <key-property name="tap" type="java.lang.String">
+                <column name="TAP" />
+            </key-property>
+            <key-property name="codiAfpTraslado" type="java.lang.String">
+                <column name="Codi_AfpTraslado" length="15" />
+            </key-property>
+            <key-property name="tda" type="java.lang.String">
+                <column name="TDA" />
+            </key-property>
+            <key-property name="taa" type="java.lang.String">
+                <column name="TAA" />
+            </key-property>
+            <key-property name="vsp" type="java.lang.String">
+                <column name="VSP" />
+            </key-property>
+            <key-property name="vte" type="java.lang.String">
+                <column name="VTE" />
+            </key-property>
+            <key-property name="vst" type="java.lang.String">
+                <column name="VST" />
+            </key-property>
+            <key-property name="sln" type="java.lang.String">
+                <column name="SLN" />
+            </key-property>
+            <key-property name="ige" type="java.lang.String">
+                <column name="IGE" />
+            </key-property>
+            <key-property name="lma" type="java.lang.String">
+                <column name="LMA" />
+            </key-property>
+            <key-property name="vac" type="java.lang.String">
+                <column name="VAC" />
+            </key-property>
+            <key-property name="avp" type="java.lang.String">
+                <column name="AVP" />
+            </key-property>
+            <key-property name="vct" type="java.lang.String">
+                <column name="VCT" />
+            </key-property>
+            <key-property name="irp" type="java.lang.String">
+                <column name="IRP" length="2" />
+            </key-property>
+            <key-property name="codUsuario" type="java.lang.String">
+                <column name="CodUsuario" length="15" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="tp000003" class="com.proyecto.demo.modelo.Tp000003" update="false" insert="false" fetch="select">
+            <column name="Codi_Eps" length="3" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

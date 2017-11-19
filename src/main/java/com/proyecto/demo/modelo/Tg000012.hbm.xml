@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/11/2017 01:41:32 PM by Hibernate Tools 5.1.0.Final -->
+<hibernate-mapping>
+    <class name="com.proyecto.demo.modelo.Tg000012" table="tg000012" catalog="ingenieria" optimistic-lock="version">
+        <id name="codProfesion" type="java.lang.String">
+            <column name="Cod_profesion" length="3" />
+            <generator class="assigned" />
+        </id>
+        <property name="desProfesion" type="java.lang.String">
+            <column name="Des_Profesion" length="50" />
+        </property>
+        <set name="tp000001s" table="tp000001" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Profesion" length="3" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tp000001" />
+        </set>
+    </class>
+</hibernate-mapping>

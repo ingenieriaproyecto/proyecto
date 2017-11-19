@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/11/2017 01:41:32 PM by Hibernate Tools 5.1.0.Final -->
+<hibernate-mapping>
+    <class name="com.proyecto.demo.modelo.Tp000004" table="tp000004" catalog="ingenieria" optimistic-lock="version">
+        <id name="codArp" type="java.lang.String">
+            <column name="Cod_ARP" length="3" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="tg000003" class="com.proyecto.demo.modelo.Tg000003" fetch="select">
+            <column name="Cod_Empresa" length="2" not-null="true" />
+        </many-to-one>
+        <property name="nitArp" type="java.lang.String">
+            <column name="Nit_ARP" length="15" not-null="true" />
+        </property>
+        <property name="tipoDocumentoArp" type="java.lang.String">
+            <column name="Tipo_DocumentoARP" length="2" />
+        </property>
+        <property name="dvarp" type="java.lang.String">
+            <column name="DVARP" length="2" />
+        </property>
+        <property name="codigoArp" type="java.lang.String">
+            <column name="CodigoARP" length="6" />
+        </property>
+        <property name="nombreArp" type="java.lang.String">
+            <column name="Nombre_ARP" length="50" />
+        </property>
+        <property name="direccionArp" type="java.lang.String">
+            <column name="Direccion_ARP" length="30" />
+        </property>
+        <property name="telefonoArp" type="java.lang.String">
+            <column name="Telefono_ARP" length="10" />
+        </property>
+        <property name="faxArp" type="java.lang.String">
+            <column name="Fax_ARP" length="10" />
+        </property>
+        <property name="emailArp" type="java.lang.String">
+            <column name="Email_ARP" length="50" />
+        </property>
+        <property name="nomContactoArp" type="java.lang.String">
+            <column name="Nom_ContactoARP" length="30" />
+        </property>
+        <property name="numPerPlaniArp" type="java.lang.String">
+            <column name="NumPerPlaniARP" length="2" />
+        </property>
+        <property name="arpactiva" type="java.lang.String">
+            <column name="ARPactiva" not-null="true" />
+        </property>
+        <set name="tp000001s" table="tp000001" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Cod_ARP" length="3" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tp000001" />
+        </set>
+        <set name="tr000004s" table="tr000004" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Codi_Arp" length="3" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tr000004" />
+        </set>
+    </class>
+</hibernate-mapping>

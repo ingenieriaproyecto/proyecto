@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">admin</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ingenieria</property>
+        <property name="hibernate.connection.username">jairof</property>
+        <property name="hibernate.default_schema">ingenieria</property>
+        <mapping resource="com/proyecto/demo/modelo/Tg000001.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tg000012.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tg000011.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tg000003.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tg000002.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tg000013.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tg000010.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tr000004.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tlp00001.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tlp00002.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tp000001.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tlp00003.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tg000008.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tg000019.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tp000004.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tg000004.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tg000026.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tp000003.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tg000029.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tp000006.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tg000006.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tg000028.hbm.xml" />
+        <mapping resource="com/proyecto/demo/modelo/Tp000005.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

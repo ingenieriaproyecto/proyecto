@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/11/2017 01:41:32 PM by Hibernate Tools 5.1.0.Final -->
+<hibernate-mapping>
+    <class name="com.proyecto.demo.modelo.Tlp00001" table="tlp00001" catalog="ingenieria" optimistic-lock="version">
+        <composite-id name="id" class="com.proyecto.demo.modelo.Tlp00001Id">
+            <key-property name="numPlanilla" type="java.lang.String">
+                <column name="Num_Planilla" length="10" />
+            </key-property>
+            <key-property name="codEmpresa" type="java.lang.String">
+                <column name="Cod_Empresa" length="2" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="tg000001" class="com.proyecto.demo.modelo.Tg000001" fetch="select">
+            <column name="Cod_Banco" length="2" />
+        </many-to-one>
+        <many-to-one name="tg000003" class="com.proyecto.demo.modelo.Tg000003" update="false" insert="false" fetch="select">
+            <column name="Cod_Empresa" length="2" not-null="true" />
+        </many-to-one>
+        <many-to-one name="tg000026" class="com.proyecto.demo.modelo.Tg000026" fetch="select">
+            <column name="TipoPlanilla" length="1" />
+        </many-to-one>
+        <one-to-one name="tlp00003" class="com.proyecto.demo.modelo.Tlp00003" constrained="true"></one-to-one>
+        <property name="consecutivoPlani" type="java.lang.String">
+            <column name="ConsecutivoPlani" />
+        </property>
+        <property name="correccionPlanilla" type="java.lang.String">
+            <column name="CorreccionPlanilla" not-null="true" />
+        </property>
+        <property name="parafiscales" type="java.lang.String">
+            <column name="Parafiscales" not-null="true" />
+        </property>
+        <property name="numPlanillaCorrecion" type="java.lang.String">
+            <column name="Num_PlanillaCorrecion" length="10" />
+        </property>
+        <property name="fechaPagoPlanillaCorrecion" type="java.util.Date">
+            <column name="Fecha_PagoPlanillaCorrecion" length="19" />
+        </property>
+        <property name="formaPresentacion" type="java.lang.String">
+            <column name="FormaPresentacion" length="1" />
+        </property>
+        <property name="codigoSucursal" type="java.lang.String">
+            <column name="CodigoSucursal" length="10" />
+        </property>
+        <property name="codigoArp" type="java.lang.String">
+            <column name="CodigoArp" length="6" />
+        </property>
+        <property name="codPeriodo" type="java.lang.String">
+            <column name="Cod_Periodo" length="10" />
+        </property>
+        <property name="codPeriodoPeRiSc" type="java.lang.String">
+            <column name="Cod_PeriodoPeRiSC" length="10" />
+        </property>
+        <property name="fechaGenera" type="java.util.Date">
+            <column name="Fecha_Genera" length="19" />
+        </property>
+        <property name="horaGenera" type="java.util.Date">
+            <column name="HoraGenera" length="19" />
+        </property>
+        <property name="fechaPago" type="java.util.Date">
+            <column name="Fecha_Pago" length="19" />
+        </property>
+        <property name="fechaIngPagoSistema" type="java.util.Date">
+            <column name="FechaIngPagoSistema" length="19" />
+        </property>
+        <property name="horaIngPagoSistema" type="java.util.Date">
+            <column name="HoraIngPagoSistema" length="19" />
+        </property>
+        <property name="numerodeCotizantes" type="java.lang.String">
+            <column name="NumerodeCotizantes" length="5" />
+        </property>
+        <property name="valorNomina" type="java.lang.String">
+            <column name="ValorNomina" length="12" />
+        </property>
+        <property name="tipoAportante" type="java.lang.String">
+            <column name="TipoAportante" length="1" />
+        </property>
+        <property name="fechaCorteRetiro" type="java.util.Date">
+            <column name="Fecha_CorteRetiro" length="19" />
+        </property>
+        <property name="masIntdemora" type="java.lang.Double">
+            <column name="MasIntdemora" scale="4" />
+        </property>
+        <property name="numeroMeses" type="java.lang.Integer">
+            <column name="NumeroMeses" />
+        </property>
+        <property name="codBanco" type="java.lang.String">
+            <column name="CodBanco" length="2" />
+        </property>
+        <property name="numCheque" type="java.lang.String">
+            <column name="NumCheque" length="20" />
+        </property>
+        <property name="numCuentadelCheque" type="java.lang.String">
+            <column name="NumCuentadelCheque" length="20" />
+        </property>
+        <property name="valorCheque" type="java.lang.Double">
+            <column name="ValorCheque" scale="4" />
+        </property>
+        <property name="valorEfectivo" type="java.lang.Double">
+            <column name="ValorEfectivo" scale="4" />
+        </property>
+        <property name="ingUsuariosPagos" type="java.lang.String">
+            <column name="IngUsuariosPagos" not-null="true" />
+        </property>
+        <property name="retUsuariosNoPagos" type="java.lang.String">
+            <column name="RetUsuariosNoPagos" not-null="true" />
+        </property>
+        <property name="eps" type="java.lang.String">
+            <column name="EPS" not-null="true" />
+        </property>
+        <property name="arp" type="java.lang.String">
+            <column name="ARP" not-null="true" />
+        </property>
+        <property name="afp" type="java.lang.String">
+            <column name="AFP" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

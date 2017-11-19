@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/11/2017 01:41:32 PM by Hibernate Tools 5.1.0.Final -->
+<hibernate-mapping>
+    <class name="com.proyecto.demo.modelo.Tp000006" table="tp000006" catalog="ingenieria" optimistic-lock="version">
+        <id name="codCaja" type="java.lang.String">
+            <column name="Cod_Caja" length="3" />
+            <generator class="assigned" />
+        </id>
+        <property name="codEmpresa" type="java.lang.String">
+            <column name="Cod_Empresa" length="2" not-null="true" />
+        </property>
+        <property name="nitCaja" type="java.lang.String">
+            <column name="Nit_Caja" length="15" not-null="true" />
+        </property>
+        <property name="tipoDocumentoCaja" type="java.lang.String">
+            <column name="Tipo_DocumentoCaja" length="2" />
+        </property>
+        <property name="dvcaja" type="java.lang.String">
+            <column name="DVCaja" length="2" />
+        </property>
+        <property name="codigoCaja" type="java.lang.String">
+            <column name="CodigoCaja" length="6" />
+        </property>
+        <property name="nombreCaja" type="java.lang.String">
+            <column name="Nombre_Caja" length="50" />
+        </property>
+        <property name="direccionCaja" type="java.lang.String">
+            <column name="Direccion_Caja" length="40" />
+        </property>
+        <property name="telefonoCaja" type="java.lang.String">
+            <column name="Telefono_Caja" length="10" />
+        </property>
+        <property name="faxCaja" type="java.lang.String">
+            <column name="Fax_Caja" length="10" />
+        </property>
+        <property name="emailCaja" type="java.lang.String">
+            <column name="Email_Caja" length="50" />
+        </property>
+        <property name="nomContactoCaja" type="java.lang.String">
+            <column name="Nom_ContactoCaja" length="30" />
+        </property>
+        <property name="numPerPlaniCaja" type="java.lang.String">
+            <column name="NumPerPlaniCaja" length="2" />
+        </property>
+        <property name="codDepto" type="java.lang.String">
+            <column name="Cod_Depto" length="8" />
+        </property>
+        <property name="cajaPrincipal" type="java.lang.String">
+            <column name="CajaPrincipal" />
+        </property>
+        <property name="noPagoCaja" type="java.lang.String">
+            <column name="NoPagoCaja" />
+        </property>
+        <set name="tp000001s" table="tp000001" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Cod_Caja" length="3" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tp000001" />
+        </set>
+        <set name="tr000004s" table="tr000004" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Codi_Caja" length="3" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tr000004" />
+        </set>
+    </class>
+</hibernate-mapping>

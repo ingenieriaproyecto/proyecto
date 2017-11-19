@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/11/2017 01:41:32 PM by Hibernate Tools 5.1.0.Final -->
+<hibernate-mapping>
+    <class name="com.proyecto.demo.modelo.Tg000008" table="tg000008" catalog="ingenieria" optimistic-lock="version">
+        <composite-id name="id" class="com.proyecto.demo.modelo.Tg000008Id">
+            <key-property name="codCuenta" type="java.lang.String">
+                <column name="Cod_Cuenta" length="2" />
+            </key-property>
+            <key-property name="codEmpresa" type="java.lang.String">
+                <column name="Cod_Empresa" length="2" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="tg000001" class="com.proyecto.demo.modelo.Tg000001" fetch="select">
+            <column name="Cod_Banco" length="2" />
+        </many-to-one>
+        <many-to-one name="tg000003" class="com.proyecto.demo.modelo.Tg000003" update="false" insert="false" fetch="select">
+            <column name="Cod_Empresa" length="2" not-null="true" />
+        </many-to-one>
+        <property name="numcuenta" type="java.lang.String">
+            <column name="Numcuenta" length="100" not-null="true" />
+        </property>
+        <property name="chequeUltimo" type="java.lang.Integer">
+            <column name="ChequeUltimo" />
+        </property>
+        <property name="chequeprimer" type="java.lang.Integer">
+            <column name="Chequeprimer" />
+        </property>
+        <property name="chequeActivo" type="java.lang.Integer">
+            <column name="chequeActivo" />
+        </property>
+        <property name="ncheques" type="java.lang.Integer">
+            <column name="Ncheques" />
+        </property>
+        <property name="tipoCuenta" type="java.lang.String">
+            <column name="TipoCuenta" length="1" />
+        </property>
+        <property name="consignacionClientes" type="java.lang.String">
+            <column name="ConsignacionClientes" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

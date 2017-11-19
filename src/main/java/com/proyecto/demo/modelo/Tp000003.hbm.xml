@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/11/2017 01:41:32 PM by Hibernate Tools 5.1.0.Final -->
+<hibernate-mapping>
+    <class name="com.proyecto.demo.modelo.Tp000003" table="tp000003" catalog="ingenieria" optimistic-lock="version">
+        <id name="codEps" type="java.lang.String">
+            <column name="Cod_EPS" length="3" />
+            <generator class="assigned" />
+        </id>
+        <property name="nitEps" type="java.lang.String">
+            <column name="Nit_EPS" length="15" not-null="true" />
+        </property>
+        <property name="tipoDocumentoEps" type="java.lang.String">
+            <column name="Tipo_DocumentoEPS" length="2" />
+        </property>
+        <property name="dveps" type="java.lang.String">
+            <column name="DVEPS" length="2" />
+        </property>
+        <property name="codigoEps" type="java.lang.String">
+            <column name="CodigoEPS" length="6" />
+        </property>
+        <property name="nombreEps" type="java.lang.String">
+            <column name="Nombre_EPS" length="50" />
+        </property>
+        <property name="direccionEps" type="java.lang.String">
+            <column name="Direccion_EPS" length="30" />
+        </property>
+        <property name="telefonoEps" type="java.lang.String">
+            <column name="Telefono_EPS" length="10" />
+        </property>
+        <property name="faxEps" type="java.lang.String">
+            <column name="Fax_EPS" length="10" />
+        </property>
+        <property name="emailEps" type="java.lang.String">
+            <column name="Email_EPS" length="50" />
+        </property>
+        <property name="nomContactoEps" type="java.lang.String">
+            <column name="Nom_ContactoEPS" length="30" />
+        </property>
+        <property name="numPerPlaniEps" type="java.lang.String">
+            <column name="NumPerPlaniEPS" length="2" />
+        </property>
+        <set name="tr000004s" table="tr000004" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Codi_Eps" length="3" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tr000004" />
+        </set>
+        <set name="tlp00002s" table="tlp00002" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Codi_Eps" length="3" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tlp00002" />
+        </set>
+        <set name="tp000001s" table="tp000001" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Cod_EPS" length="3" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tp000001" />
+        </set>
+    </class>
+</hibernate-mapping>

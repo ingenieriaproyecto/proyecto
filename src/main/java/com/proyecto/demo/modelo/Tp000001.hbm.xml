@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/11/2017 01:41:32 PM by Hibernate Tools 5.1.0.Final -->
+<hibernate-mapping>
+    <class name="com.proyecto.demo.modelo.Tp000001" table="tp000001" catalog="ingenieria" optimistic-lock="version">
+        <composite-id name="id" class="com.proyecto.demo.modelo.Tp000001Id">
+            <key-property name="codEmpresa" type="java.lang.String">
+                <column name="Cod_Empresa" length="2" />
+            </key-property>
+            <key-property name="codEmpresaEmp" type="java.lang.String">
+                <column name="Cod_EmpresaEmp" length="3" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="tg000002" class="com.proyecto.demo.modelo.Tg000002" fetch="select">
+            <column name="Ciud_Documento" length="8" />
+        </many-to-one>
+        <many-to-one name="tg000012" class="com.proyecto.demo.modelo.Tg000012" fetch="select">
+            <column name="Profesion" length="3" />
+        </many-to-one>
+        <many-to-one name="tg000013" class="com.proyecto.demo.modelo.Tg000013" fetch="select">
+            <column name="Cargo" length="7" />
+        </many-to-one>
+        <many-to-one name="tg000019" class="com.proyecto.demo.modelo.Tg000019" fetch="select">
+            <column name="Tipo_Documento" length="2" />
+        </many-to-one>
+        <many-to-one name="tg000028" class="com.proyecto.demo.modelo.Tg000028" fetch="select">
+            <column name="Tipocotizante" length="2" />
+        </many-to-one>
+        <many-to-one name="tg000029" class="com.proyecto.demo.modelo.Tg000029" fetch="select">
+            <column name="SubTipocotizante" length="2" />
+        </many-to-one>
+        <many-to-one name="tp000003" class="com.proyecto.demo.modelo.Tp000003" fetch="select">
+            <column name="Cod_EPS" length="3" />
+        </many-to-one>
+        <many-to-one name="tp000004" class="com.proyecto.demo.modelo.Tp000004" fetch="select">
+            <column name="Cod_ARP" length="3" />
+        </many-to-one>
+        <many-to-one name="tp000005" class="com.proyecto.demo.modelo.Tp000005" fetch="select">
+            <column name="Cod_AFP" length="3" />
+        </many-to-one>
+        <many-to-one name="tp000006" class="com.proyecto.demo.modelo.Tp000006" fetch="select">
+            <column name="Cod_Caja" length="3" />
+        </many-to-one>
+        <property name="codCotizante" type="java.lang.String">
+            <column name="Cod_Cotizante" length="9" not-null="true" />
+        </property>
+        <property name="idenCotizante" type="java.lang.String">
+            <column name="Iden_Cotizante" length="15" not-null="true" />
+        </property>
+        <property name="primerNomCotizante" type="java.lang.String">
+            <column name="Primer_Nom_Cotizante" length="30" />
+        </property>
+        <property name="segundoNomCotizante" type="java.lang.String">
+            <column name="Segundo_Nom_Cotizante" length="30" />
+        </property>
+        <property name="primerApeCotizante" type="java.lang.String">
+            <column name="Primer_Ape_Cotizante" length="30" />
+        </property>
+        <property name="segundoApeCotizante" type="java.lang.String">
+            <column name="Segundo_Ape_Cotizante" length="30" />
+        </property>
+        <property name="extranjero" type="java.lang.String">
+            <column name="Extranjero" />
+        </property>
+        <property name="colombianoExterior" type="java.lang.String">
+            <column name="ColombianoExterior" />
+        </property>
+        <property name="cotisanteValorUpc" type="java.lang.Double">
+            <column name="Cotisante_Valor_Upc" scale="4" />
+        </property>
+        <property name="cotizanteValorEsp" type="java.lang.Double">
+            <column name="Cotizante_Valor_Esp" scale="4" />
+        </property>
+        <property name="cotizanteEspecial" type="java.lang.String">
+            <column name="CotizanteEspecial" />
+        </property>
+        <property name="fechaNacimiento" type="java.util.Date">
+            <column name="Fecha_Nacimiento" length="19" />
+        </property>
+        <property name="estadoCivil" type="java.lang.String">
+            <column name="Estado_Civil" length="2" />
+        </property>
+        <property name="ciuLaboralCotizante" type="java.lang.String">
+            <column name="CiuLaboral_Cotizante" length="6" />
+        </property>
+        <property name="dirCotizante" type="java.lang.String">
+            <column name="Dir_Cotizante" length="200" />
+        </property>
+        <property name="ciuCotizante" type="java.lang.String">
+            <column name="Ciu_Cotizante" length="8" />
+        </property>
+        <property name="telCotizante" type="java.lang.String">
+            <column name="Tel_Cotizante" length="30" />
+        </property>
+        <property name="celular" type="java.lang.String">
+            <column name="Celular" length="10" />
+        </property>
+        <property name="beeper" type="java.lang.String">
+            <column name="beeper" length="15" />
+        </property>
+        <property name="emailCotizante" type="java.lang.String">
+            <column name="Email_Cotizante" length="50" />
+        </property>
+        <property name="codigoCentroTrabajoC" type="java.lang.String">
+            <column name="CodigoCentroTrabajoC" length="9" />
+        </property>
+        <property name="sexo" type="java.lang.String">
+            <column name="Sexo" length="1" />
+        </property>
+        <property name="basico" type="java.lang.Double">
+            <column name="Basico" scale="4" />
+        </property>
+        <property name="tipoSalario" type="java.lang.String">
+            <column name="Tipo_Salario" length="2" />
+        </property>
+        <property name="salarioIntegral" type="java.lang.String">
+            <column name="Salario_Integral" />
+        </property>
+        <property name="fechaIngresoEmp" type="java.util.Date">
+            <column name="Fecha_IngresoEmp" length="19" />
+        </property>
+        <property name="estrato" type="java.lang.Integer">
+            <column name="Estrato" />
+        </property>
+        <property name="codigoPostal" type="java.lang.String">
+            <column name="CodigoPostal" length="20" />
+        </property>
+        <property name="zona" type="java.lang.Integer">
+            <column name="Zona" />
+        </property>
+        <property name="fcoberUrgencia" type="java.util.Date">
+            <column name="FCober_Urgencia" length="19" />
+        </property>
+        <property name="fcoberTotal" type="java.util.Date">
+            <column name="FCober_Total" length="19" />
+        </property>
+        <property name="fechaRadicacion" type="java.util.Date">
+            <column name="Fecha_Radicacion" length="19" />
+        </property>
+        <property name="numRadicacion" type="java.lang.String">
+            <column name="Num_Radicacion" length="15" />
+        </property>
+        <property name="tipoAfiliacion" type="java.lang.String">
+            <column name="Tipo_Afiliacion" length="1" />
+        </property>
+        <property name="fechaAfiliacion" type="java.util.Date">
+            <column name="Fecha_Afiliacion" length="19" />
+        </property>
+        <property name="observacion" type="java.lang.String">
+            <column name="observacion" />
+        </property>
+        <property name="codAsesor2" type="java.lang.String">
+            <column name="Cod_Asesor2" length="3" />
+        </property>
+        <property name="codAsesor" type="java.lang.String">
+            <column name="Cod_Asesor" length="3" />
+        </property>
+        <property name="epsActiva" type="java.lang.String">
+            <column name="EpsActiva" />
+        </property>
+        <property name="planilladoRtEps" type="java.lang.String">
+            <column name="PlanilladoRtEps" />
+        </property>
+        <property name="arpActiva" type="java.lang.String">
+            <column name="ArpActiva" />
+        </property>
+        <property name="planilladoRtArp" type="java.lang.String">
+            <column name="PlanilladoRtArp" />
+        </property>
+        <property name="afpActiva" type="java.lang.String">
+            <column name="AfpActiva" />
+        </property>
+        <property name="planilladoRtAfp" type="java.lang.String">
+            <column name="PlanilladoRtAfp" />
+        </property>
+        <property name="cajaActiva" type="java.lang.String">
+            <column name="CajaActiva" />
+        </property>
+        <property name="planilladoRtCaja" type="java.lang.String">
+            <column name="PlanilladoRtCaja" />
+        </property>
+        <property name="fecInicioEps" type="java.util.Date">
+            <column name="Fec_InicioEPS" length="19" />
+        </property>
+        <property name="fecInicioArp" type="java.util.Date">
+            <column name="Fec_InicioARP" length="19" />
+        </property>
+        <property name="fecInicioAfp" type="java.util.Date">
+            <column name="Fec_inicioAFP" length="19" />
+        </property>
+        <property name="fecInicioCaja" type="java.util.Date">
+            <column name="Fec_inicioCaja" length="19" />
+        </property>
+        <property name="nafiliacionEps" type="java.lang.String">
+            <column name="NAfiliacion_EPS" length="10" />
+        </property>
+        <property name="nafiliacionArp" type="java.lang.String">
+            <column name="NAfiliacion_ARP" length="10" />
+        </property>
+        <property name="nafiliacionAfp" type="java.lang.String">
+            <column name="NAfiliacion_AFP" length="10" />
+        </property>
+        <property name="nafiliacionCaja" type="java.lang.String">
+            <column name="NAfiliacion_Caja" length="10" />
+        </property>
+        <property name="primeraEps" type="java.lang.String">
+            <column name="PrimeraEPS" />
+        </property>
+        <property name="primeraArp" type="java.lang.String">
+            <column name="PrimeraARP" />
+        </property>
+        <property name="primeraAfp" type="java.lang.String">
+            <column name="PrimeraAFP" />
+        </property>
+        <property name="primeraCaja" type="java.lang.String">
+            <column name="PrimeraCaja" />
+        </property>
+        <property name="codIntBarrio" type="java.lang.String">
+            <column name="Cod_Int_Barrio" length="9" />
+        </property>
+        <property name="estadoCotizante" type="java.lang.String">
+            <column name="EstadoCotizante" length="2" />
+        </property>
+        <property name="estadoCarnetArp" type="java.lang.String">
+            <column name="EstadoCarnetARP" length="1" />
+        </property>
+        <property name="fechaEntregaCarnetArp" type="java.util.Date">
+            <column name="FechaEntrega_CarnetARP" length="19" />
+        </property>
+        <property name="quienRecibeCarnetArp" type="java.lang.String">
+            <column name="QuienRecibe_CarnetARP" length="150" />
+        </property>
+        <property name="estadoCarnetCaja" type="java.lang.String">
+            <column name="EstadoCarnetCaja" length="1" />
+        </property>
+        <property name="fechaEntregaCarnetCaja" type="java.util.Date">
+            <column name="FechaEntrega_CarnetCaja" length="19" />
+        </property>
+        <property name="quienRecibeCarnetCaja" type="java.lang.String">
+            <column name="QuienRecibe_CarnetCaja" length="150" />
+        </property>
+        <property name="pagaParafiscales" type="java.lang.String">
+            <column name="PagaParafiscales" />
+        </property>
+        <property name="rutaFoto" type="java.lang.String">
+            <column name="RutaFoto" length="50" />
+        </property>
+        <property name="ipsAtencionCotiza" type="java.lang.String">
+            <column name="Ips_AtencionCotiza" length="150" />
+        </property>
+        <property name="ipsDirecionCotiza" type="java.lang.String">
+            <column name="Ips_DirecionCotiza" length="150" />
+        </property>
+        <property name="ipsTelefonosCotiza" type="java.lang.String">
+            <column name="Ips_TelefonosCotiza" length="15" />
+        </property>
+        <one-to-one name="tg000011" class="com.proyecto.demo.modelo.Tg000011"></one-to-one>
+    </class>
+</hibernate-mapping>

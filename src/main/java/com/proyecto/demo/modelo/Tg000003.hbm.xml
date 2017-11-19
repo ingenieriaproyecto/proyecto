@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/11/2017 01:41:32 PM by Hibernate Tools 5.1.0.Final -->
+<hibernate-mapping>
+    <class name="com.proyecto.demo.modelo.Tg000003" table="tg000003" catalog="ingenieria" optimistic-lock="version">
+        <id name="codEmpresa" type="java.lang.String">
+            <column name="Cod_Empresa" length="2" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="tg000002" class="com.proyecto.demo.modelo.Tg000002" fetch="select">
+            <column name="Ciudad" length="8" />
+        </many-to-one>
+        <many-to-one name="tg000006" class="com.proyecto.demo.modelo.Tg000006" fetch="select">
+            <column name="Cargo" length="10" />
+        </many-to-one>
+        <property name="nit" type="java.lang.String">
+            <column name="Nit" length="15" not-null="true" />
+        </property>
+        <property name="dvemp" type="java.lang.String">
+            <column name="DVEMP" length="2" />
+        </property>
+        <property name="tipoDocumentoC" type="java.lang.String">
+            <column name="Tipo_DocumentoC" length="2" />
+        </property>
+        <property name="razonSocial" type="java.lang.String">
+            <column name="RazonSocial" length="100" />
+        </property>
+        <property name="sigla" type="java.lang.String">
+            <column name="Sigla" length="20" />
+        </property>
+        <property name="direccion" type="java.lang.String">
+            <column name="Direccion" length="100" />
+        </property>
+        <property name="nomRegistroPila" type="java.lang.String">
+            <column name="NomRegistroPila" length="100" />
+        </property>
+        <property name="tipoAportante" type="java.lang.String">
+            <column name="TipoAportante" length="1" />
+        </property>
+        <property name="depto" type="java.lang.String">
+            <column name="Depto" length="8" />
+        </property>
+        <property name="apartado" type="java.lang.String">
+            <column name="Apartado" length="15" />
+        </property>
+        <property name="telefono" type="java.lang.String">
+            <column name="Telefono" length="15" />
+        </property>
+        <property name="fax" type="java.lang.String">
+            <column name="Fax" length="15" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="Email" length="30" />
+        </property>
+        <property name="valAdmon" type="java.lang.Double">
+            <column name="Val_Admon" scale="4" />
+        </property>
+        <property name="valAdmonAfp" type="java.lang.Integer">
+            <column name="Val_AdmonAFP" />
+        </property>
+        <property name="porcAporteSocial" type="java.lang.Double">
+            <column name="PorcAporteSocial" scale="4" />
+        </property>
+        <property name="porcEps" type="java.lang.Double">
+            <column name="PorcEps" scale="4" />
+        </property>
+        <property name="porAfp" type="java.lang.Double">
+            <column name="PorAFP" scale="4" />
+        </property>
+        <property name="porcCaja" type="java.lang.Double">
+            <column name="PorcCaja" scale="4" />
+        </property>
+        <property name="porcSena" type="java.lang.Double">
+            <column name="PorcSena" scale="4" />
+        </property>
+        <property name="porcIcbf" type="java.lang.Double">
+            <column name="PorcICBF" scale="4" />
+        </property>
+        <property name="riesgo1" type="java.lang.Double">
+            <column name="Riesgo1" scale="4" />
+        </property>
+        <property name="riesgo2" type="java.lang.Double">
+            <column name="Riesgo2" scale="4" />
+        </property>
+        <property name="riesgo3" type="java.lang.Double">
+            <column name="Riesgo3" scale="4" />
+        </property>
+        <property name="riesgo4" type="java.lang.Double">
+            <column name="Riesgo4" scale="4" />
+        </property>
+        <property name="riesgo5" type="java.lang.Double">
+            <column name="Riesgo5" scale="4" />
+        </property>
+        <property name="fondoArp" type="java.lang.Double">
+            <column name="FondoARP" scale="4" />
+        </property>
+        <property name="porMoraPlanilla" type="java.lang.Double">
+            <column name="PorMoraPlanilla" scale="4" />
+        </property>
+        <property name="porMoraRecibo" type="java.lang.Double">
+            <column name="PorMoraRecibo" scale="4" />
+        </property>
+        <property name="valorMensajeriaRecibo" type="java.lang.Double">
+            <column name="ValorMensajeriaRecibo" scale="4" />
+        </property>
+        <property name="nomContacto" type="java.lang.String">
+            <column name="Nom_Contacto" length="30" />
+        </property>
+        <property name="apeContacto" type="java.lang.String">
+            <column name="Ape_Contacto" length="30" />
+        </property>
+        <property name="profesion" type="java.lang.String">
+            <column name="profesion" length="50" />
+        </property>
+        <property name="observacion" type="java.lang.String">
+            <column name="Observacion" />
+        </property>
+        <property name="salarioBasico" type="java.lang.Double">
+            <column name="SalarioBasico" scale="4" />
+        </property>
+        <property name="porcIva" type="java.lang.Double">
+            <column name="PorcIva" scale="4" />
+        </property>
+        <property name="notaAlpieRecibo" type="java.lang.String">
+            <column name="NotaAlpieRecibo" />
+        </property>
+        <property name="valorReactivacion" type="java.lang.Double">
+            <column name="ValorReactivacion" scale="4" />
+        </property>
+        <property name="valorRetiro" type="java.lang.Double">
+            <column name="ValorRetiro" scale="4" />
+        </property>
+        <property name="de4amenosde16" type="java.lang.Double">
+            <column name="De4amenosde16" scale="4" />
+        </property>
+        <property name="de16hasta17" type="java.lang.Double">
+            <column name="De16hasta17" scale="4" />
+        </property>
+        <property name="masde17hasta18" type="java.lang.Double">
+            <column name="Masde17hasta18" scale="4" />
+        </property>
+        <property name="masde18hasta19" type="java.lang.Double">
+            <column name="Masde18hasta19" scale="4" />
+        </property>
+        <property name="masde19hasta20" type="java.lang.Double">
+            <column name="Masde19hasta20" scale="4" />
+        </property>
+        <property name="mayora20" type="java.lang.Double">
+            <column name="Mayora20" scale="4" />
+        </property>
+        <property name="fechaPrimerPago" type="java.util.Date">
+            <column name="Fecha_PrimerPago" length="19" />
+        </property>
+        <property name="fechaSegundoPago" type="java.util.Date">
+            <column name="Fecha_SegundoPago" length="19" />
+        </property>
+        <property name="despedida" type="java.lang.String">
+            <column name="Despedida" length="15" />
+        </property>
+        <property name="departamentoCargo" type="java.lang.String">
+            <column name="Departamento_Cargo" length="200" />
+        </property>
+        <property name="firmadaPor" type="java.lang.String">
+            <column name="FirmadaPor" length="200" />
+        </property>
+        <property name="pagaMesActual" type="java.lang.String">
+            <column name="PagaMesActual" not-null="true" />
+        </property>
+        <property name="numeroEmpresas" type="java.lang.String">
+            <column name="NumeroEmpresas" length="2" />
+        </property>
+        <property name="ibcredondeado" type="java.lang.Double">
+            <column name="IBCredondeado" scale="4" />
+        </property>
+        <property name="ibcresiduoMayor" type="java.lang.Double">
+            <column name="IBCresiduoMayor" scale="4" />
+        </property>
+        <property name="cotizacionredondeada" type="java.lang.Double">
+            <column name="Cotizacionredondeada" scale="4" />
+        </property>
+        <property name="cotizacionresiduoMayor" type="java.lang.Double">
+            <column name="CotizacionresiduoMayor" scale="4" />
+        </property>
+        <property name="ibcnoCaja" type="java.lang.Double">
+            <column name="IBCnoCaja" scale="4" />
+        </property>
+        <property name="cotizacionnoCaja" type="java.lang.Double">
+            <column name="CotizacionnoCaja" scale="4" />
+        </property>
+        <set name="tg000008s" table="tg000008" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Cod_Empresa" length="2" not-null="true" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tg000008" />
+        </set>
+        <set name="tg000010s" table="tg000010" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Cod_Empresa" length="2" not-null="true" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tg000010" />
+        </set>
+        <set name="tlp00001s" table="tlp00001" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Cod_Empresa" length="2" not-null="true" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tlp00001" />
+        </set>
+        <set name="tp000004s" table="tp000004" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Cod_Empresa" length="2" not-null="true" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tp000004" />
+        </set>
+        <set name="tr000004s" table="tr000004" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Cod_Empresa" length="2" not-null="true" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tr000004" />
+        </set>
+        <set name="tg000011s" table="tg000011" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Cod_Empresa" length="2" not-null="true" />
+            </key>
+            <one-to-many class="com.proyecto.demo.modelo.Tg000011" />
+        </set>
+    </class>
+</hibernate-mapping>
