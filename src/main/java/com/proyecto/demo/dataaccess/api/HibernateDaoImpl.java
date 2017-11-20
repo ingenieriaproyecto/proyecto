@@ -1,27 +1,16 @@
 package com.proyecto.demo.dataaccess.api;
 
 
-import org.hibernate.HibernateException;
-
+import org.hibernate.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-
 import org.hibernate.criterion.DetachedCriteria;
-
 import org.hibernate.criterion.Order;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-
 import org.springframework.beans.factory.annotation.Autowired;
-
-
-
-
 import java.io.Serializable;
-
 import java.lang.reflect.ParameterizedType;
-
 import java.util.Collection;
 import java.util.List;
 
@@ -38,7 +27,7 @@ import java.util.List;
 @SuppressWarnings({"unchecked",
     "rawtypes"
 })
-public class HibernateDaoImpl<T, PK extends Serializable> implements Dao<T, PK> {
+public class HibernateDaoImpl<T, pK extends Serializable> implements Dao<T, pK> {
     @Autowired
     private SessionFactory sessionFactory;
     private Class<T> entityClass;
@@ -59,11 +48,11 @@ public class HibernateDaoImpl<T, PK extends Serializable> implements Dao<T, PK> 
         getSession().save(newEntity);
     }
 
-    public T findById(PK id) {
+    public T findById(pK id) {
         return (T) getSession().get(entityClass, id);
     }
 
-    public T load(PK id) {
+    public T load(pK id) {
         return (T) getSession().load(entityClass, id);
     }
 
@@ -96,7 +85,7 @@ public class HibernateDaoImpl<T, PK extends Serializable> implements Dao<T, PK> 
         getSession().delete(entity);
     }
 
-    public void deleteById(PK id) throws DaoException {
+    public void deleteById(pK id) throws DaoException {
         T toRemove = findById(id);
         getSession().delete(toRemove);
     }
@@ -286,7 +275,7 @@ public class HibernateDaoImpl<T, PK extends Serializable> implements Dao<T, PK> 
      */
     public Order prepareOrderForCriteria(String sort) {
         char symbol = sort.charAt(0);
-        int dot = sort.indexOf(".");
+        int dot = sort.indexOf('.');
         String originalSort = symbol + sort.substring(dot + 1, sort.length());
         sort = sort.substring(dot + 1, sort.length());
 
