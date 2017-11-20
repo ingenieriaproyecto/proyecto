@@ -16,13 +16,14 @@ public class ZMessManager extends RuntimeException {
 	public final static String ALL = "All ";
 	public final static String ENTCHILD = "related tables(childs)";
 	public final static String FOREIGNDATA = "foreign classes data: ";
-	public static String ENTITY_SUCCESFULLYSAVED = "Entity succesfully saved";
-	public static String ENTITY_SUCCESFULLYDELETED = "Entity succesfully deleted";
-	public static String ENTITY_SUCCESFULLYMODIFIED = "Entity succesfully modified";
-	public static String ENTITY_WITHSAMEKEY = "Another Entity with the same key was found";
-	public static String ENTITY_NOENTITYTOUPDATE = "No Entity was found, with the typed key ";
+	public static final String ENTITY_SUCCESFULLYSAVED = "Entity succesfully saved";
+	public static final String ENTITY_SUCCESFULLYDELETED = "Entity succesfully deleted";
+	public static final String ENTITY_SUCCESFULLYMODIFIED = "Entity succesfully modified";
+	public static final String ENTITY_WITHSAMEKEY = "Another Entity with the same key was found";
+	public static final String ENTITY_NOENTITYTOUPDATE = "No Entity was found, with the typed key ";
 
 	public ZMessManager() {
+		
 	}
 
 	public ZMessManager(String exception) {
