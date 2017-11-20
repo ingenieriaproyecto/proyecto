@@ -44,6 +44,7 @@ public class Tg000008View implements Serializable {
     private InputText txtChequeprimer;
     private InputText txtConsignacionClientes;
     private InputText txtNcheques;
+    private Tg000008Id id = new Tg000008Id();
     private InputText txtNumcuenta;
     private InputText txtTipoCuenta;
     private InputText txtCodBanco_Tg000001;
@@ -145,7 +146,7 @@ public class Tg000008View implements Serializable {
 
     public void listener_txtId() {
         try {
-            Tg000008Id id = new Tg000008Id();
+           
             id.setCodCuenta((((txtCodCuenta.getValue()) == null) ||
                 (txtCodCuenta.getValue()).equals("")) ? null
                                                       : FacesUtils.checkString(
@@ -155,6 +156,9 @@ public class Tg000008View implements Serializable {
                                                        : FacesUtils.checkString(
                     txtCodEmpresa));
             entity = (id != null) ? businessDelegatorView.getTg000008(id) : null;
+            
+          
+                
         } catch (Exception e) {
             entity = null;
         }

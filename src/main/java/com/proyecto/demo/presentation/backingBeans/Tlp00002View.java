@@ -77,10 +77,10 @@ super();
     private InputText txtIngresoBaseCotizacionAfp;
     private InputText txtIngresoBaseCotizacionCaja;
     private InputText txtIngresoBaseCotizacionSenaIcbf;
-    private InputText txtCotizaciónObligatoria;
-    private InputText txtCotizaciónObligatoriaArp;
+    private InputText txtCotizaciï¿½nObligatoria;
+    private InputText txtCotizaciï¿½nObligatoriaArp;
     private InputText txtCodigoCentroTrabajo;
-    private InputText txtCotizaciónObligatoriaAfp;
+    private InputText txtCotizaciï¿½nObligatoriaAfp;
     private InputText txtValorFpsolidaridad;
     private InputText txtValorFpsubsistencia;
     private InputText txtRiesgos;
@@ -88,11 +88,11 @@ super();
     private InputText txtPorcRiesgo;
     private InputText txtPorcAfp;
     private InputText txtPorcCaja;
-    private InputText txtCotizaciónObligatoriaCaja;
+    private InputText txtCotizaciï¿½nObligatoriaCaja;
     private InputText txtPorcSena;
-    private InputText txtCotizaciónObligatoriaSena;
+    private InputText txtCotizaciï¿½nObligatoriaSena;
     private InputText txtPorcIcbf;
-    private InputText txtCotizaciónObligatoriaIcbf;
+    private InputText txtCotizaciï¿½nObligatoriaIcbf;
     private InputText txtDetaPlanPrimeraEps;
     private InputText txtDetaPlanPrimeraArp;
     private InputText txtDetaPlanPrimeraAfp;
@@ -271,21 +271,21 @@ private IBusinessDelegatorView businessDelegatorView;
 				   txtIngresoBaseCotizacionSenaIcbf.setValue(null);
 				   txtIngresoBaseCotizacionSenaIcbf.setDisabled(false);	
 				}
-        			    if(txtCotizaciónObligatoria != null){
-				   txtCotizaciónObligatoria.setValue(null);
-				   txtCotizaciónObligatoria.setDisabled(false);	
+        			    if(txtCotizaciï¿½nObligatoria != null){
+				   txtCotizaciï¿½nObligatoria.setValue(null);
+				   txtCotizaciï¿½nObligatoria.setDisabled(false);	
 				}
-        			    if(txtCotizaciónObligatoriaArp != null){
-				   txtCotizaciónObligatoriaArp.setValue(null);
-				   txtCotizaciónObligatoriaArp.setDisabled(false);	
+        			    if(txtCotizaciï¿½nObligatoriaArp != null){
+				   txtCotizaciï¿½nObligatoriaArp.setValue(null);
+				   txtCotizaciï¿½nObligatoriaArp.setDisabled(false);	
 				}
         			    if(txtCodigoCentroTrabajo != null){
 				   txtCodigoCentroTrabajo.setValue(null);
 				   txtCodigoCentroTrabajo.setDisabled(false);	
 				}
-        			    if(txtCotizaciónObligatoriaAfp != null){
-				   txtCotizaciónObligatoriaAfp.setValue(null);
-				   txtCotizaciónObligatoriaAfp.setDisabled(false);	
+        			    if(txtCotizaciï¿½nObligatoriaAfp != null){
+				   txtCotizaciï¿½nObligatoriaAfp.setValue(null);
+				   txtCotizaciï¿½nObligatoriaAfp.setDisabled(false);	
 				}
         			    if(txtValorFpsolidaridad != null){
 				   txtValorFpsolidaridad.setValue(null);
@@ -315,25 +315,25 @@ private IBusinessDelegatorView businessDelegatorView;
 				   txtPorcCaja.setValue(null);
 				   txtPorcCaja.setDisabled(false);	
 				}
-        			    if(txtCotizaciónObligatoriaCaja != null){
-				   txtCotizaciónObligatoriaCaja.setValue(null);
-				   txtCotizaciónObligatoriaCaja.setDisabled(false);	
+        			    if(txtCotizaciï¿½nObligatoriaCaja != null){
+				   txtCotizaciï¿½nObligatoriaCaja.setValue(null);
+				   txtCotizaciï¿½nObligatoriaCaja.setDisabled(false);	
 				}
         			    if(txtPorcSena != null){
 				   txtPorcSena.setValue(null);
 				   txtPorcSena.setDisabled(false);	
 				}
-        			    if(txtCotizaciónObligatoriaSena != null){
-				   txtCotizaciónObligatoriaSena.setValue(null);
-				   txtCotizaciónObligatoriaSena.setDisabled(false);	
+        			    if(txtCotizaciï¿½nObligatoriaSena != null){
+				   txtCotizaciï¿½nObligatoriaSena.setValue(null);
+				   txtCotizaciï¿½nObligatoriaSena.setDisabled(false);	
 				}
         			    if(txtPorcIcbf != null){
 				   txtPorcIcbf.setValue(null);
 				   txtPorcIcbf.setDisabled(false);	
 				}
-        			    if(txtCotizaciónObligatoriaIcbf != null){
-				   txtCotizaciónObligatoriaIcbf.setValue(null);
-				   txtCotizaciónObligatoriaIcbf.setDisabled(false);	
+        			    if(txtCotizaciï¿½nObligatoriaIcbf != null){
+				   txtCotizaciï¿½nObligatoriaIcbf.setValue(null);
+				   txtCotizaciï¿½nObligatoriaIcbf.setDisabled(false);	
 				}
         			    if(txtDetaPlanPrimeraEps != null){
 				   txtDetaPlanPrimeraEps.setValue(null);
@@ -480,10 +480,10 @@ private IBusinessDelegatorView businessDelegatorView;
 	    	        id.setIngresoBaseCotizacionAfp((txtIngresoBaseCotizacionAfp.getValue())==null||(txtIngresoBaseCotizacionAfp.getValue()).equals("")?null: FacesUtils.checkDouble(txtIngresoBaseCotizacionAfp));
 	    	        id.setIngresoBaseCotizacionCaja((txtIngresoBaseCotizacionCaja.getValue())==null||(txtIngresoBaseCotizacionCaja.getValue()).equals("")?null: FacesUtils.checkDouble(txtIngresoBaseCotizacionCaja));
 	    	        id.setIngresoBaseCotizacionSenaIcbf((txtIngresoBaseCotizacionSenaIcbf.getValue())==null||(txtIngresoBaseCotizacionSenaIcbf.getValue()).equals("")?null: FacesUtils.checkDouble(txtIngresoBaseCotizacionSenaIcbf));
-	    	        id.setCotizaciónObligatoria((txtCotizaciónObligatoria.getValue())==null||(txtCotizaciónObligatoria.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoria));
-	    	        id.setCotizaciónObligatoriaArp((txtCotizaciónObligatoriaArp.getValue())==null||(txtCotizaciónObligatoriaArp.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaArp));
+	    	        id.setCotizaciï¿½nObligatoria((txtCotizaciï¿½nObligatoria.getValue())==null||(txtCotizaciï¿½nObligatoria.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoria));
+	    	        id.setCotizaciï¿½nObligatoriaArp((txtCotizaciï¿½nObligatoriaArp.getValue())==null||(txtCotizaciï¿½nObligatoriaArp.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaArp));
 	    	        id.setCodigoCentroTrabajo((txtCodigoCentroTrabajo.getValue())==null||(txtCodigoCentroTrabajo.getValue()).equals("")?null: FacesUtils.checkString(txtCodigoCentroTrabajo));
-	    	        id.setCotizaciónObligatoriaAfp((txtCotizaciónObligatoriaAfp.getValue())==null||(txtCotizaciónObligatoriaAfp.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaAfp));
+	    	        id.setCotizaciï¿½nObligatoriaAfp((txtCotizaciï¿½nObligatoriaAfp.getValue())==null||(txtCotizaciï¿½nObligatoriaAfp.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaAfp));
 	    	        id.setValorFpsolidaridad((txtValorFpsolidaridad.getValue())==null||(txtValorFpsolidaridad.getValue()).equals("")?null: FacesUtils.checkDouble(txtValorFpsolidaridad));
 	    	        id.setValorFpsubsistencia((txtValorFpsubsistencia.getValue())==null||(txtValorFpsubsistencia.getValue()).equals("")?null: FacesUtils.checkDouble(txtValorFpsubsistencia));
 	    	        id.setRiesgos((txtRiesgos.getValue())==null||(txtRiesgos.getValue()).equals("")?null: FacesUtils.checkInteger(txtRiesgos));
@@ -491,11 +491,11 @@ private IBusinessDelegatorView businessDelegatorView;
 	    	        id.setPorcRiesgo((txtPorcRiesgo.getValue())==null||(txtPorcRiesgo.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcRiesgo));
 	    	        id.setPorcAfp((txtPorcAfp.getValue())==null||(txtPorcAfp.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcAfp));
 	    	        id.setPorcCaja((txtPorcCaja.getValue())==null||(txtPorcCaja.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcCaja));
-	    	        id.setCotizaciónObligatoriaCaja((txtCotizaciónObligatoriaCaja.getValue())==null||(txtCotizaciónObligatoriaCaja.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaCaja));
+	    	        id.setCotizaciï¿½nObligatoriaCaja((txtCotizaciï¿½nObligatoriaCaja.getValue())==null||(txtCotizaciï¿½nObligatoriaCaja.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaCaja));
 	    	        id.setPorcSena((txtPorcSena.getValue())==null||(txtPorcSena.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcSena));
-	    	        id.setCotizaciónObligatoriaSena((txtCotizaciónObligatoriaSena.getValue())==null||(txtCotizaciónObligatoriaSena.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaSena));
+	    	        id.setCotizaciï¿½nObligatoriaSena((txtCotizaciï¿½nObligatoriaSena.getValue())==null||(txtCotizaciï¿½nObligatoriaSena.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaSena));
 	    	        id.setPorcIcbf((txtPorcIcbf.getValue())==null||(txtPorcIcbf.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcIcbf));
-	    	        id.setCotizaciónObligatoriaIcbf((txtCotizaciónObligatoriaIcbf.getValue())==null||(txtCotizaciónObligatoriaIcbf.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaIcbf));
+	    	        id.setCotizaciï¿½nObligatoriaIcbf((txtCotizaciï¿½nObligatoriaIcbf.getValue())==null||(txtCotizaciï¿½nObligatoriaIcbf.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaIcbf));
 	    	        id.setDetaPlanPrimeraEps((txtDetaPlanPrimeraEps.getValue())==null||(txtDetaPlanPrimeraEps.getValue()).equals("")?null: FacesUtils.checkString(txtDetaPlanPrimeraEps));
 	    	        id.setDetaPlanPrimeraArp((txtDetaPlanPrimeraArp.getValue())==null||(txtDetaPlanPrimeraArp.getValue()).equals("")?null: FacesUtils.checkString(txtDetaPlanPrimeraArp));
 	    	        id.setDetaPlanPrimeraAfp((txtDetaPlanPrimeraAfp.getValue())==null||(txtDetaPlanPrimeraAfp.getValue()).equals("")?null: FacesUtils.checkString(txtDetaPlanPrimeraAfp));
@@ -559,10 +559,10 @@ private IBusinessDelegatorView businessDelegatorView;
 	    	        txtIngresoBaseCotizacionAfp.setDisabled(false);
 	    	        txtIngresoBaseCotizacionCaja.setDisabled(false);
 	    	        txtIngresoBaseCotizacionSenaIcbf.setDisabled(false);
-	    	        txtCotizaciónObligatoria.setDisabled(false);
-	    	        txtCotizaciónObligatoriaArp.setDisabled(false);
+	    	        txtCotizaciï¿½nObligatoria.setDisabled(false);
+	    	        txtCotizaciï¿½nObligatoriaArp.setDisabled(false);
 	    	        txtCodigoCentroTrabajo.setDisabled(false);
-	    	        txtCotizaciónObligatoriaAfp.setDisabled(false);
+	    	        txtCotizaciï¿½nObligatoriaAfp.setDisabled(false);
 	    	        txtValorFpsolidaridad.setDisabled(false);
 	    	        txtValorFpsubsistencia.setDisabled(false);
 	    	        txtRiesgos.setDisabled(false);
@@ -570,11 +570,11 @@ private IBusinessDelegatorView businessDelegatorView;
 	    	        txtPorcRiesgo.setDisabled(false);
 	    	        txtPorcAfp.setDisabled(false);
 	    	        txtPorcCaja.setDisabled(false);
-	    	        txtCotizaciónObligatoriaCaja.setDisabled(false);
+	    	        txtCotizaciï¿½nObligatoriaCaja.setDisabled(false);
 	    	        txtPorcSena.setDisabled(false);
-	    	        txtCotizaciónObligatoriaSena.setDisabled(false);
+	    	        txtCotizaciï¿½nObligatoriaSena.setDisabled(false);
 	    	        txtPorcIcbf.setDisabled(false);
-	    	        txtCotizaciónObligatoriaIcbf.setDisabled(false);
+	    	        txtCotizaciï¿½nObligatoriaIcbf.setDisabled(false);
 	    	        txtDetaPlanPrimeraEps.setDisabled(false);
 	    	        txtDetaPlanPrimeraArp.setDisabled(false);
 	    	        txtDetaPlanPrimeraAfp.setDisabled(false);
@@ -634,10 +634,10 @@ private IBusinessDelegatorView businessDelegatorView;
 		    		        txtIngresoBaseCotizacionAfp.setValue(entity.getId().getIngresoBaseCotizacionAfp());txtIngresoBaseCotizacionAfp.setDisabled(true);
 		    		        txtIngresoBaseCotizacionCaja.setValue(entity.getId().getIngresoBaseCotizacionCaja());txtIngresoBaseCotizacionCaja.setDisabled(true);
 		    		        txtIngresoBaseCotizacionSenaIcbf.setValue(entity.getId().getIngresoBaseCotizacionSenaIcbf());txtIngresoBaseCotizacionSenaIcbf.setDisabled(true);
-		    		        txtCotizaciónObligatoria.setValue(entity.getId().getCotizaciónObligatoria());txtCotizaciónObligatoria.setDisabled(true);
-		    		        txtCotizaciónObligatoriaArp.setValue(entity.getId().getCotizaciónObligatoriaArp());txtCotizaciónObligatoriaArp.setDisabled(true);
+		    		        txtCotizaciï¿½nObligatoria.setValue(entity.getId().getCotizaciï¿½nObligatoria());txtCotizaciï¿½nObligatoria.setDisabled(true);
+		    		        txtCotizaciï¿½nObligatoriaArp.setValue(entity.getId().getCotizaciï¿½nObligatoriaArp());txtCotizaciï¿½nObligatoriaArp.setDisabled(true);
 		    		        txtCodigoCentroTrabajo.setValue(entity.getId().getCodigoCentroTrabajo());txtCodigoCentroTrabajo.setDisabled(true);
-		    		        txtCotizaciónObligatoriaAfp.setValue(entity.getId().getCotizaciónObligatoriaAfp());txtCotizaciónObligatoriaAfp.setDisabled(true);
+		    		        txtCotizaciï¿½nObligatoriaAfp.setValue(entity.getId().getCotizaciï¿½nObligatoriaAfp());txtCotizaciï¿½nObligatoriaAfp.setDisabled(true);
 		    		        txtValorFpsolidaridad.setValue(entity.getId().getValorFpsolidaridad());txtValorFpsolidaridad.setDisabled(true);
 		    		        txtValorFpsubsistencia.setValue(entity.getId().getValorFpsubsistencia());txtValorFpsubsistencia.setDisabled(true);
 		    		        txtRiesgos.setValue(entity.getId().getRiesgos());txtRiesgos.setDisabled(true);
@@ -645,11 +645,11 @@ private IBusinessDelegatorView businessDelegatorView;
 		    		        txtPorcRiesgo.setValue(entity.getId().getPorcRiesgo());txtPorcRiesgo.setDisabled(true);
 		    		        txtPorcAfp.setValue(entity.getId().getPorcAfp());txtPorcAfp.setDisabled(true);
 		    		        txtPorcCaja.setValue(entity.getId().getPorcCaja());txtPorcCaja.setDisabled(true);
-		    		        txtCotizaciónObligatoriaCaja.setValue(entity.getId().getCotizaciónObligatoriaCaja());txtCotizaciónObligatoriaCaja.setDisabled(true);
+		    		        txtCotizaciï¿½nObligatoriaCaja.setValue(entity.getId().getCotizaciï¿½nObligatoriaCaja());txtCotizaciï¿½nObligatoriaCaja.setDisabled(true);
 		    		        txtPorcSena.setValue(entity.getId().getPorcSena());txtPorcSena.setDisabled(true);
-		    		        txtCotizaciónObligatoriaSena.setValue(entity.getId().getCotizaciónObligatoriaSena());txtCotizaciónObligatoriaSena.setDisabled(true);
+		    		        txtCotizaciï¿½nObligatoriaSena.setValue(entity.getId().getCotizaciï¿½nObligatoriaSena());txtCotizaciï¿½nObligatoriaSena.setDisabled(true);
 		    		        txtPorcIcbf.setValue(entity.getId().getPorcIcbf());txtPorcIcbf.setDisabled(true);
-		    		        txtCotizaciónObligatoriaIcbf.setValue(entity.getId().getCotizaciónObligatoriaIcbf());txtCotizaciónObligatoriaIcbf.setDisabled(true);
+		    		        txtCotizaciï¿½nObligatoriaIcbf.setValue(entity.getId().getCotizaciï¿½nObligatoriaIcbf());txtCotizaciï¿½nObligatoriaIcbf.setDisabled(true);
 		    		        txtDetaPlanPrimeraEps.setValue(entity.getId().getDetaPlanPrimeraEps());txtDetaPlanPrimeraEps.setDisabled(true);
 		    		        txtDetaPlanPrimeraArp.setValue(entity.getId().getDetaPlanPrimeraArp());txtDetaPlanPrimeraArp.setDisabled(true);
 		    		        txtDetaPlanPrimeraAfp.setValue(entity.getId().getDetaPlanPrimeraAfp());txtDetaPlanPrimeraAfp.setDisabled(true);
@@ -717,10 +717,10 @@ private IBusinessDelegatorView businessDelegatorView;
             txtIngresoBaseCotizacionAfp.setValue(selectedTlp00002.getIngresoBaseCotizacionAfp());txtIngresoBaseCotizacionAfp.setDisabled(true);
             txtIngresoBaseCotizacionCaja.setValue(selectedTlp00002.getIngresoBaseCotizacionCaja());txtIngresoBaseCotizacionCaja.setDisabled(true);
             txtIngresoBaseCotizacionSenaIcbf.setValue(selectedTlp00002.getIngresoBaseCotizacionSenaIcbf());txtIngresoBaseCotizacionSenaIcbf.setDisabled(true);
-            txtCotizaciónObligatoria.setValue(selectedTlp00002.getCotizaciónObligatoria());txtCotizaciónObligatoria.setDisabled(true);
-            txtCotizaciónObligatoriaArp.setValue(selectedTlp00002.getCotizaciónObligatoriaArp());txtCotizaciónObligatoriaArp.setDisabled(true);
+            txtCotizaciï¿½nObligatoria.setValue(selectedTlp00002.getCotizaciï¿½nObligatoria());txtCotizaciï¿½nObligatoria.setDisabled(true);
+            txtCotizaciï¿½nObligatoriaArp.setValue(selectedTlp00002.getCotizaciï¿½nObligatoriaArp());txtCotizaciï¿½nObligatoriaArp.setDisabled(true);
             txtCodigoCentroTrabajo.setValue(selectedTlp00002.getCodigoCentroTrabajo());txtCodigoCentroTrabajo.setDisabled(true);
-            txtCotizaciónObligatoriaAfp.setValue(selectedTlp00002.getCotizaciónObligatoriaAfp());txtCotizaciónObligatoriaAfp.setDisabled(true);
+            txtCotizaciï¿½nObligatoriaAfp.setValue(selectedTlp00002.getCotizaciï¿½nObligatoriaAfp());txtCotizaciï¿½nObligatoriaAfp.setDisabled(true);
             txtValorFpsolidaridad.setValue(selectedTlp00002.getValorFpsolidaridad());txtValorFpsolidaridad.setDisabled(true);
             txtValorFpsubsistencia.setValue(selectedTlp00002.getValorFpsubsistencia());txtValorFpsubsistencia.setDisabled(true);
             txtRiesgos.setValue(selectedTlp00002.getRiesgos());txtRiesgos.setDisabled(true);
@@ -728,11 +728,11 @@ private IBusinessDelegatorView businessDelegatorView;
             txtPorcRiesgo.setValue(selectedTlp00002.getPorcRiesgo());txtPorcRiesgo.setDisabled(true);
             txtPorcAfp.setValue(selectedTlp00002.getPorcAfp());txtPorcAfp.setDisabled(true);
             txtPorcCaja.setValue(selectedTlp00002.getPorcCaja());txtPorcCaja.setDisabled(true);
-            txtCotizaciónObligatoriaCaja.setValue(selectedTlp00002.getCotizaciónObligatoriaCaja());txtCotizaciónObligatoriaCaja.setDisabled(true);
+            txtCotizaciï¿½nObligatoriaCaja.setValue(selectedTlp00002.getCotizaciï¿½nObligatoriaCaja());txtCotizaciï¿½nObligatoriaCaja.setDisabled(true);
             txtPorcSena.setValue(selectedTlp00002.getPorcSena());txtPorcSena.setDisabled(true);
-            txtCotizaciónObligatoriaSena.setValue(selectedTlp00002.getCotizaciónObligatoriaSena());txtCotizaciónObligatoriaSena.setDisabled(true);
+            txtCotizaciï¿½nObligatoriaSena.setValue(selectedTlp00002.getCotizaciï¿½nObligatoriaSena());txtCotizaciï¿½nObligatoriaSena.setDisabled(true);
             txtPorcIcbf.setValue(selectedTlp00002.getPorcIcbf());txtPorcIcbf.setDisabled(true);
-            txtCotizaciónObligatoriaIcbf.setValue(selectedTlp00002.getCotizaciónObligatoriaIcbf());txtCotizaciónObligatoriaIcbf.setDisabled(true);
+            txtCotizaciï¿½nObligatoriaIcbf.setValue(selectedTlp00002.getCotizaciï¿½nObligatoriaIcbf());txtCotizaciï¿½nObligatoriaIcbf.setDisabled(true);
             txtDetaPlanPrimeraEps.setValue(selectedTlp00002.getDetaPlanPrimeraEps());txtDetaPlanPrimeraEps.setDisabled(true);
             txtDetaPlanPrimeraArp.setValue(selectedTlp00002.getDetaPlanPrimeraArp());txtDetaPlanPrimeraArp.setDisabled(true);
             txtDetaPlanPrimeraAfp.setValue(selectedTlp00002.getDetaPlanPrimeraAfp());txtDetaPlanPrimeraAfp.setDisabled(true);
@@ -816,10 +816,10 @@ private IBusinessDelegatorView businessDelegatorView;
 	    	        id.setIngresoBaseCotizacionAfp((txtIngresoBaseCotizacionAfp.getValue())==null||(txtIngresoBaseCotizacionAfp.getValue()).equals("")?null: FacesUtils.checkDouble(txtIngresoBaseCotizacionAfp));
 	    	        id.setIngresoBaseCotizacionCaja((txtIngresoBaseCotizacionCaja.getValue())==null||(txtIngresoBaseCotizacionCaja.getValue()).equals("")?null: FacesUtils.checkDouble(txtIngresoBaseCotizacionCaja));
 	    	        id.setIngresoBaseCotizacionSenaIcbf((txtIngresoBaseCotizacionSenaIcbf.getValue())==null||(txtIngresoBaseCotizacionSenaIcbf.getValue()).equals("")?null: FacesUtils.checkDouble(txtIngresoBaseCotizacionSenaIcbf));
-	    	        id.setCotizaciónObligatoria((txtCotizaciónObligatoria.getValue())==null||(txtCotizaciónObligatoria.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoria));
-	    	        id.setCotizaciónObligatoriaArp((txtCotizaciónObligatoriaArp.getValue())==null||(txtCotizaciónObligatoriaArp.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaArp));
+	    	        id.setCotizaciï¿½nObligatoria((txtCotizaciï¿½nObligatoria.getValue())==null||(txtCotizaciï¿½nObligatoria.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoria));
+	    	        id.setCotizaciï¿½nObligatoriaArp((txtCotizaciï¿½nObligatoriaArp.getValue())==null||(txtCotizaciï¿½nObligatoriaArp.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaArp));
 	    	        id.setCodigoCentroTrabajo((txtCodigoCentroTrabajo.getValue())==null||(txtCodigoCentroTrabajo.getValue()).equals("")?null: FacesUtils.checkString(txtCodigoCentroTrabajo));
-	    	        id.setCotizaciónObligatoriaAfp((txtCotizaciónObligatoriaAfp.getValue())==null||(txtCotizaciónObligatoriaAfp.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaAfp));
+	    	        id.setCotizaciï¿½nObligatoriaAfp((txtCotizaciï¿½nObligatoriaAfp.getValue())==null||(txtCotizaciï¿½nObligatoriaAfp.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaAfp));
 	    	        id.setValorFpsolidaridad((txtValorFpsolidaridad.getValue())==null||(txtValorFpsolidaridad.getValue()).equals("")?null: FacesUtils.checkDouble(txtValorFpsolidaridad));
 	    	        id.setValorFpsubsistencia((txtValorFpsubsistencia.getValue())==null||(txtValorFpsubsistencia.getValue()).equals("")?null: FacesUtils.checkDouble(txtValorFpsubsistencia));
 	    	        id.setRiesgos((txtRiesgos.getValue())==null||(txtRiesgos.getValue()).equals("")?null: FacesUtils.checkInteger(txtRiesgos));
@@ -827,11 +827,11 @@ private IBusinessDelegatorView businessDelegatorView;
 	    	        id.setPorcRiesgo((txtPorcRiesgo.getValue())==null||(txtPorcRiesgo.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcRiesgo));
 	    	        id.setPorcAfp((txtPorcAfp.getValue())==null||(txtPorcAfp.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcAfp));
 	    	        id.setPorcCaja((txtPorcCaja.getValue())==null||(txtPorcCaja.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcCaja));
-	    	        id.setCotizaciónObligatoriaCaja((txtCotizaciónObligatoriaCaja.getValue())==null||(txtCotizaciónObligatoriaCaja.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaCaja));
+	    	        id.setCotizaciï¿½nObligatoriaCaja((txtCotizaciï¿½nObligatoriaCaja.getValue())==null||(txtCotizaciï¿½nObligatoriaCaja.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaCaja));
 	    	        id.setPorcSena((txtPorcSena.getValue())==null||(txtPorcSena.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcSena));
-	    	        id.setCotizaciónObligatoriaSena((txtCotizaciónObligatoriaSena.getValue())==null||(txtCotizaciónObligatoriaSena.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaSena));
+	    	        id.setCotizaciï¿½nObligatoriaSena((txtCotizaciï¿½nObligatoriaSena.getValue())==null||(txtCotizaciï¿½nObligatoriaSena.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaSena));
 	    	        id.setPorcIcbf((txtPorcIcbf.getValue())==null||(txtPorcIcbf.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcIcbf));
-	    	        id.setCotizaciónObligatoriaIcbf((txtCotizaciónObligatoriaIcbf.getValue())==null||(txtCotizaciónObligatoriaIcbf.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaIcbf));
+	    	        id.setCotizaciï¿½nObligatoriaIcbf((txtCotizaciï¿½nObligatoriaIcbf.getValue())==null||(txtCotizaciï¿½nObligatoriaIcbf.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaIcbf));
 	    	        id.setDetaPlanPrimeraEps((txtDetaPlanPrimeraEps.getValue())==null||(txtDetaPlanPrimeraEps.getValue()).equals("")?null: FacesUtils.checkString(txtDetaPlanPrimeraEps));
 	    	        id.setDetaPlanPrimeraArp((txtDetaPlanPrimeraArp.getValue())==null||(txtDetaPlanPrimeraArp.getValue()).equals("")?null: FacesUtils.checkString(txtDetaPlanPrimeraArp));
 	    	        id.setDetaPlanPrimeraAfp((txtDetaPlanPrimeraAfp.getValue())==null||(txtDetaPlanPrimeraAfp.getValue()).equals("")?null: FacesUtils.checkString(txtDetaPlanPrimeraAfp));
@@ -905,10 +905,10 @@ private IBusinessDelegatorView businessDelegatorView;
 		    		        id.setIngresoBaseCotizacionAfp(selectedTlp00002.getIngresoBaseCotizacionAfp());
 		    		        id.setIngresoBaseCotizacionCaja(selectedTlp00002.getIngresoBaseCotizacionCaja());
 		    		        id.setIngresoBaseCotizacionSenaIcbf(selectedTlp00002.getIngresoBaseCotizacionSenaIcbf());
-		    		        id.setCotizaciónObligatoria(selectedTlp00002.getCotizaciónObligatoria());
-		    		        id.setCotizaciónObligatoriaArp(selectedTlp00002.getCotizaciónObligatoriaArp());
+		    		        id.setCotizaciï¿½nObligatoria(selectedTlp00002.getCotizaciï¿½nObligatoria());
+		    		        id.setCotizaciï¿½nObligatoriaArp(selectedTlp00002.getCotizaciï¿½nObligatoriaArp());
 		    		        id.setCodigoCentroTrabajo(selectedTlp00002.getCodigoCentroTrabajo());
-		    		        id.setCotizaciónObligatoriaAfp(selectedTlp00002.getCotizaciónObligatoriaAfp());
+		    		        id.setCotizaciï¿½nObligatoriaAfp(selectedTlp00002.getCotizaciï¿½nObligatoriaAfp());
 		    		        id.setValorFpsolidaridad(selectedTlp00002.getValorFpsolidaridad());
 		    		        id.setValorFpsubsistencia(selectedTlp00002.getValorFpsubsistencia());
 		    		        id.setRiesgos(selectedTlp00002.getRiesgos());
@@ -916,11 +916,11 @@ private IBusinessDelegatorView businessDelegatorView;
 		    		        id.setPorcRiesgo(selectedTlp00002.getPorcRiesgo());
 		    		        id.setPorcAfp(selectedTlp00002.getPorcAfp());
 		    		        id.setPorcCaja(selectedTlp00002.getPorcCaja());
-		    		        id.setCotizaciónObligatoriaCaja(selectedTlp00002.getCotizaciónObligatoriaCaja());
+		    		        id.setCotizaciï¿½nObligatoriaCaja(selectedTlp00002.getCotizaciï¿½nObligatoriaCaja());
 		    		        id.setPorcSena(selectedTlp00002.getPorcSena());
-		    		        id.setCotizaciónObligatoriaSena(selectedTlp00002.getCotizaciónObligatoriaSena());
+		    		        id.setCotizaciï¿½nObligatoriaSena(selectedTlp00002.getCotizaciï¿½nObligatoriaSena());
 		    		        id.setPorcIcbf(selectedTlp00002.getPorcIcbf());
-		    		        id.setCotizaciónObligatoriaIcbf(selectedTlp00002.getCotizaciónObligatoriaIcbf());
+		    		        id.setCotizaciï¿½nObligatoriaIcbf(selectedTlp00002.getCotizaciï¿½nObligatoriaIcbf());
 		    		        id.setDetaPlanPrimeraEps(selectedTlp00002.getDetaPlanPrimeraEps());
 		    		        id.setDetaPlanPrimeraArp(selectedTlp00002.getDetaPlanPrimeraArp());
 		    		        id.setDetaPlanPrimeraAfp(selectedTlp00002.getDetaPlanPrimeraAfp());
@@ -994,10 +994,10 @@ private IBusinessDelegatorView businessDelegatorView;
 							id.setIngresoBaseCotizacionAfp(selectedTlp00002.getIngresoBaseCotizacionAfp());
 							id.setIngresoBaseCotizacionCaja(selectedTlp00002.getIngresoBaseCotizacionCaja());
 							id.setIngresoBaseCotizacionSenaIcbf(selectedTlp00002.getIngresoBaseCotizacionSenaIcbf());
-							id.setCotizaciónObligatoria(selectedTlp00002.getCotizaciónObligatoria());
-							id.setCotizaciónObligatoriaArp(selectedTlp00002.getCotizaciónObligatoriaArp());
+							id.setCotizaciï¿½nObligatoria(selectedTlp00002.getCotizaciï¿½nObligatoria());
+							id.setCotizaciï¿½nObligatoriaArp(selectedTlp00002.getCotizaciï¿½nObligatoriaArp());
 							id.setCodigoCentroTrabajo(selectedTlp00002.getCodigoCentroTrabajo());
-							id.setCotizaciónObligatoriaAfp(selectedTlp00002.getCotizaciónObligatoriaAfp());
+							id.setCotizaciï¿½nObligatoriaAfp(selectedTlp00002.getCotizaciï¿½nObligatoriaAfp());
 							id.setValorFpsolidaridad(selectedTlp00002.getValorFpsolidaridad());
 							id.setValorFpsubsistencia(selectedTlp00002.getValorFpsubsistencia());
 							id.setRiesgos(selectedTlp00002.getRiesgos());
@@ -1005,11 +1005,11 @@ private IBusinessDelegatorView businessDelegatorView;
 							id.setPorcRiesgo(selectedTlp00002.getPorcRiesgo());
 							id.setPorcAfp(selectedTlp00002.getPorcAfp());
 							id.setPorcCaja(selectedTlp00002.getPorcCaja());
-							id.setCotizaciónObligatoriaCaja(selectedTlp00002.getCotizaciónObligatoriaCaja());
+							id.setCotizaciï¿½nObligatoriaCaja(selectedTlp00002.getCotizaciï¿½nObligatoriaCaja());
 							id.setPorcSena(selectedTlp00002.getPorcSena());
-							id.setCotizaciónObligatoriaSena(selectedTlp00002.getCotizaciónObligatoriaSena());
+							id.setCotizaciï¿½nObligatoriaSena(selectedTlp00002.getCotizaciï¿½nObligatoriaSena());
 							id.setPorcIcbf(selectedTlp00002.getPorcIcbf());
-							id.setCotizaciónObligatoriaIcbf(selectedTlp00002.getCotizaciónObligatoriaIcbf());
+							id.setCotizaciï¿½nObligatoriaIcbf(selectedTlp00002.getCotizaciï¿½nObligatoriaIcbf());
 							id.setDetaPlanPrimeraEps(selectedTlp00002.getDetaPlanPrimeraEps());
 							id.setDetaPlanPrimeraArp(selectedTlp00002.getDetaPlanPrimeraArp());
 							id.setDetaPlanPrimeraAfp(selectedTlp00002.getDetaPlanPrimeraAfp());
@@ -1077,10 +1077,10 @@ private IBusinessDelegatorView businessDelegatorView;
 		    		        id.setIngresoBaseCotizacionAfp((txtIngresoBaseCotizacionAfp.getValue())==null||(txtIngresoBaseCotizacionAfp.getValue()).equals("")?null: FacesUtils.checkDouble(txtIngresoBaseCotizacionAfp));
 		    		        id.setIngresoBaseCotizacionCaja((txtIngresoBaseCotizacionCaja.getValue())==null||(txtIngresoBaseCotizacionCaja.getValue()).equals("")?null: FacesUtils.checkDouble(txtIngresoBaseCotizacionCaja));
 		    		        id.setIngresoBaseCotizacionSenaIcbf((txtIngresoBaseCotizacionSenaIcbf.getValue())==null||(txtIngresoBaseCotizacionSenaIcbf.getValue()).equals("")?null: FacesUtils.checkDouble(txtIngresoBaseCotizacionSenaIcbf));
-		    		        id.setCotizaciónObligatoria((txtCotizaciónObligatoria.getValue())==null||(txtCotizaciónObligatoria.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoria));
-		    		        id.setCotizaciónObligatoriaArp((txtCotizaciónObligatoriaArp.getValue())==null||(txtCotizaciónObligatoriaArp.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaArp));
+		    		        id.setCotizaciï¿½nObligatoria((txtCotizaciï¿½nObligatoria.getValue())==null||(txtCotizaciï¿½nObligatoria.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoria));
+		    		        id.setCotizaciï¿½nObligatoriaArp((txtCotizaciï¿½nObligatoriaArp.getValue())==null||(txtCotizaciï¿½nObligatoriaArp.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaArp));
 		    		        id.setCodigoCentroTrabajo((txtCodigoCentroTrabajo.getValue())==null||(txtCodigoCentroTrabajo.getValue()).equals("")?null: FacesUtils.checkString(txtCodigoCentroTrabajo));
-		    		        id.setCotizaciónObligatoriaAfp((txtCotizaciónObligatoriaAfp.getValue())==null||(txtCotizaciónObligatoriaAfp.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaAfp));
+		    		        id.setCotizaciï¿½nObligatoriaAfp((txtCotizaciï¿½nObligatoriaAfp.getValue())==null||(txtCotizaciï¿½nObligatoriaAfp.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaAfp));
 		    		        id.setValorFpsolidaridad((txtValorFpsolidaridad.getValue())==null||(txtValorFpsolidaridad.getValue()).equals("")?null: FacesUtils.checkDouble(txtValorFpsolidaridad));
 		    		        id.setValorFpsubsistencia((txtValorFpsubsistencia.getValue())==null||(txtValorFpsubsistencia.getValue()).equals("")?null: FacesUtils.checkDouble(txtValorFpsubsistencia));
 		    		        id.setRiesgos((txtRiesgos.getValue())==null||(txtRiesgos.getValue()).equals("")?null: FacesUtils.checkInteger(txtRiesgos));
@@ -1088,11 +1088,11 @@ private IBusinessDelegatorView businessDelegatorView;
 		    		        id.setPorcRiesgo((txtPorcRiesgo.getValue())==null||(txtPorcRiesgo.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcRiesgo));
 		    		        id.setPorcAfp((txtPorcAfp.getValue())==null||(txtPorcAfp.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcAfp));
 		    		        id.setPorcCaja((txtPorcCaja.getValue())==null||(txtPorcCaja.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcCaja));
-		    		        id.setCotizaciónObligatoriaCaja((txtCotizaciónObligatoriaCaja.getValue())==null||(txtCotizaciónObligatoriaCaja.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaCaja));
+		    		        id.setCotizaciï¿½nObligatoriaCaja((txtCotizaciï¿½nObligatoriaCaja.getValue())==null||(txtCotizaciï¿½nObligatoriaCaja.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaCaja));
 		    		        id.setPorcSena((txtPorcSena.getValue())==null||(txtPorcSena.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcSena));
-		    		        id.setCotizaciónObligatoriaSena((txtCotizaciónObligatoriaSena.getValue())==null||(txtCotizaciónObligatoriaSena.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaSena));
+		    		        id.setCotizaciï¿½nObligatoriaSena((txtCotizaciï¿½nObligatoriaSena.getValue())==null||(txtCotizaciï¿½nObligatoriaSena.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaSena));
 		    		        id.setPorcIcbf((txtPorcIcbf.getValue())==null||(txtPorcIcbf.getValue()).equals("")?null: FacesUtils.checkDouble(txtPorcIcbf));
-		    		        id.setCotizaciónObligatoriaIcbf((txtCotizaciónObligatoriaIcbf.getValue())==null||(txtCotizaciónObligatoriaIcbf.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciónObligatoriaIcbf));
+		    		        id.setCotizaciï¿½nObligatoriaIcbf((txtCotizaciï¿½nObligatoriaIcbf.getValue())==null||(txtCotizaciï¿½nObligatoriaIcbf.getValue()).equals("")?null: FacesUtils.checkDouble(txtCotizaciï¿½nObligatoriaIcbf));
 		    		        id.setDetaPlanPrimeraEps((txtDetaPlanPrimeraEps.getValue())==null||(txtDetaPlanPrimeraEps.getValue()).equals("")?null: FacesUtils.checkString(txtDetaPlanPrimeraEps));
 		    		        id.setDetaPlanPrimeraArp((txtDetaPlanPrimeraArp.getValue())==null||(txtDetaPlanPrimeraArp.getValue()).equals("")?null: FacesUtils.checkString(txtDetaPlanPrimeraArp));
 		    		        id.setDetaPlanPrimeraAfp((txtDetaPlanPrimeraAfp.getValue())==null||(txtDetaPlanPrimeraAfp.getValue()).equals("")?null: FacesUtils.checkString(txtDetaPlanPrimeraAfp));
@@ -1144,7 +1144,7 @@ private IBusinessDelegatorView businessDelegatorView;
     }	
 		
 		
-        public String action_modifyWitDTO(String numPlanilla, String codiEps, String codiArp, String codiAfp, String codiCaja, String cotizante, String codEmpresaEmp, String ciuLaboralCotizante, String depLaboralCotizante, String tipocotizante, String subTipocotizante, Integer diasCotizados, Integer diasCotizadosArp, Integer diasCotizadosAfp, Integer diasCotizadosCaja, Double salarioBasico, String salarioCIntegral, String planillaEps, String planillaArp, String planillaAfp, String planillaCaja, String numAuincapacidad, Double valorIncapacidad, String numAulicenciaM, Double valorLicenciaM, Double valorUpcAdicional, Double ingresoBaseCotizacion, Double ingresoBaseCotizacionArp, Double ingresoBaseCotizacionAfp, Double ingresoBaseCotizacionCaja, Double ingresoBaseCotizacionSenaIcbf, Double cotizaciónObligatoria, Double cotizaciónObligatoriaArp, String codigoCentroTrabajo, Double cotizaciónObligatoriaAfp, Double valorFpsolidaridad, Double valorFpsubsistencia, Integer riesgos, Double porcEps, Double porcRiesgo, Double porcAfp, Double porcCaja, Double cotizaciónObligatoriaCaja, Double porcSena, Double cotizaciónObligatoriaSena, Double porcIcbf, Double cotizaciónObligatoriaIcbf, String detaPlanPrimeraEps, String detaPlanPrimeraArp, String detaPlanPrimeraAfp, String detaPlanPrimeraCaja, String ing, String ret, String tde, String tae, String codiEpsTraslado, String tdp, String tap, String codiAfpTraslado, String tda, String taa, String vsp, String vte, String vst, String sln, String ige, String lma, String vac, String avp, String vct, String irp, String codUsuario, String codEps_Tp000003) throws Exception {
+        public String action_modifyWitDTO(String numPlanilla, String codiEps, String codiArp, String codiAfp, String codiCaja, String cotizante, String codEmpresaEmp, String ciuLaboralCotizante, String depLaboralCotizante, String tipocotizante, String subTipocotizante, Integer diasCotizados, Integer diasCotizadosArp, Integer diasCotizadosAfp, Integer diasCotizadosCaja, Double salarioBasico, String salarioCIntegral, String planillaEps, String planillaArp, String planillaAfp, String planillaCaja, String numAuincapacidad, Double valorIncapacidad, String numAulicenciaM, Double valorLicenciaM, Double valorUpcAdicional, Double ingresoBaseCotizacion, Double ingresoBaseCotizacionArp, Double ingresoBaseCotizacionAfp, Double ingresoBaseCotizacionCaja, Double ingresoBaseCotizacionSenaIcbf, Double cotizaciï¿½nObligatoria, Double cotizaciï¿½nObligatoriaArp, String codigoCentroTrabajo, Double cotizaciï¿½nObligatoriaAfp, Double valorFpsolidaridad, Double valorFpsubsistencia, Integer riesgos, Double porcEps, Double porcRiesgo, Double porcAfp, Double porcCaja, Double cotizaciï¿½nObligatoriaCaja, Double porcSena, Double cotizaciï¿½nObligatoriaSena, Double porcIcbf, Double cotizaciï¿½nObligatoriaIcbf, String detaPlanPrimeraEps, String detaPlanPrimeraArp, String detaPlanPrimeraAfp, String detaPlanPrimeraCaja, String ing, String ret, String tde, String tae, String codiEpsTraslado, String tdp, String tap, String codiAfpTraslado, String tda, String taa, String vsp, String vte, String vst, String sln, String ige, String lma, String vac, String avp, String vct, String irp, String codUsuario, String codEps_Tp000003) throws Exception {
         try {
         
         	            businessDelegatorView.updateTlp00002(entity);
@@ -1351,17 +1351,17 @@ private IBusinessDelegatorView businessDelegatorView;
                                                 public void setTxtIngresoBaseCotizacionSenaIcbf(InputText txtIngresoBaseCotizacionSenaIcbf) {
                                                 this.txtIngresoBaseCotizacionSenaIcbf = txtIngresoBaseCotizacionSenaIcbf;
                                                 }
-                                                                                            public InputText getTxtCotizaciónObligatoria() {
-                                                return txtCotizaciónObligatoria;
+                                                                                            public InputText getTxtCotizaciï¿½nObligatoria() {
+                                                return txtCotizaciï¿½nObligatoria;
                                                 }
-                                                public void setTxtCotizaciónObligatoria(InputText txtCotizaciónObligatoria) {
-                                                this.txtCotizaciónObligatoria = txtCotizaciónObligatoria;
+                                                public void setTxtCotizaciï¿½nObligatoria(InputText txtCotizaciï¿½nObligatoria) {
+                                                this.txtCotizaciï¿½nObligatoria = txtCotizaciï¿½nObligatoria;
                                                 }
-                                                                                            public InputText getTxtCotizaciónObligatoriaArp() {
-                                                return txtCotizaciónObligatoriaArp;
+                                                                                            public InputText getTxtCotizaciï¿½nObligatoriaArp() {
+                                                return txtCotizaciï¿½nObligatoriaArp;
                                                 }
-                                                public void setTxtCotizaciónObligatoriaArp(InputText txtCotizaciónObligatoriaArp) {
-                                                this.txtCotizaciónObligatoriaArp = txtCotizaciónObligatoriaArp;
+                                                public void setTxtCotizaciï¿½nObligatoriaArp(InputText txtCotizaciï¿½nObligatoriaArp) {
+                                                this.txtCotizaciï¿½nObligatoriaArp = txtCotizaciï¿½nObligatoriaArp;
                                                 }
                                                                                             public InputText getTxtCodigoCentroTrabajo() {
                                                 return txtCodigoCentroTrabajo;
@@ -1369,11 +1369,11 @@ private IBusinessDelegatorView businessDelegatorView;
                                                 public void setTxtCodigoCentroTrabajo(InputText txtCodigoCentroTrabajo) {
                                                 this.txtCodigoCentroTrabajo = txtCodigoCentroTrabajo;
                                                 }
-                                                                                            public InputText getTxtCotizaciónObligatoriaAfp() {
-                                                return txtCotizaciónObligatoriaAfp;
+                                                                                            public InputText getTxtCotizaciï¿½nObligatoriaAfp() {
+                                                return txtCotizaciï¿½nObligatoriaAfp;
                                                 }
-                                                public void setTxtCotizaciónObligatoriaAfp(InputText txtCotizaciónObligatoriaAfp) {
-                                                this.txtCotizaciónObligatoriaAfp = txtCotizaciónObligatoriaAfp;
+                                                public void setTxtCotizaciï¿½nObligatoriaAfp(InputText txtCotizaciï¿½nObligatoriaAfp) {
+                                                this.txtCotizaciï¿½nObligatoriaAfp = txtCotizaciï¿½nObligatoriaAfp;
                                                 }
                                                                                             public InputText getTxtValorFpsolidaridad() {
                                                 return txtValorFpsolidaridad;
@@ -1417,11 +1417,11 @@ private IBusinessDelegatorView businessDelegatorView;
                                                 public void setTxtPorcCaja(InputText txtPorcCaja) {
                                                 this.txtPorcCaja = txtPorcCaja;
                                                 }
-                                                                                            public InputText getTxtCotizaciónObligatoriaCaja() {
-                                                return txtCotizaciónObligatoriaCaja;
+                                                                                            public InputText getTxtCotizaciï¿½nObligatoriaCaja() {
+                                                return txtCotizaciï¿½nObligatoriaCaja;
                                                 }
-                                                public void setTxtCotizaciónObligatoriaCaja(InputText txtCotizaciónObligatoriaCaja) {
-                                                this.txtCotizaciónObligatoriaCaja = txtCotizaciónObligatoriaCaja;
+                                                public void setTxtCotizaciï¿½nObligatoriaCaja(InputText txtCotizaciï¿½nObligatoriaCaja) {
+                                                this.txtCotizaciï¿½nObligatoriaCaja = txtCotizaciï¿½nObligatoriaCaja;
                                                 }
                                                                                             public InputText getTxtPorcSena() {
                                                 return txtPorcSena;
@@ -1429,11 +1429,11 @@ private IBusinessDelegatorView businessDelegatorView;
                                                 public void setTxtPorcSena(InputText txtPorcSena) {
                                                 this.txtPorcSena = txtPorcSena;
                                                 }
-                                                                                            public InputText getTxtCotizaciónObligatoriaSena() {
-                                                return txtCotizaciónObligatoriaSena;
+                                                                                            public InputText getTxtCotizaciï¿½nObligatoriaSena() {
+                                                return txtCotizaciï¿½nObligatoriaSena;
                                                 }
-                                                public void setTxtCotizaciónObligatoriaSena(InputText txtCotizaciónObligatoriaSena) {
-                                                this.txtCotizaciónObligatoriaSena = txtCotizaciónObligatoriaSena;
+                                                public void setTxtCotizaciï¿½nObligatoriaSena(InputText txtCotizaciï¿½nObligatoriaSena) {
+                                                this.txtCotizaciï¿½nObligatoriaSena = txtCotizaciï¿½nObligatoriaSena;
                                                 }
                                                                                             public InputText getTxtPorcIcbf() {
                                                 return txtPorcIcbf;
@@ -1441,11 +1441,11 @@ private IBusinessDelegatorView businessDelegatorView;
                                                 public void setTxtPorcIcbf(InputText txtPorcIcbf) {
                                                 this.txtPorcIcbf = txtPorcIcbf;
                                                 }
-                                                                                            public InputText getTxtCotizaciónObligatoriaIcbf() {
-                                                return txtCotizaciónObligatoriaIcbf;
+                                                                                            public InputText getTxtCotizaciï¿½nObligatoriaIcbf() {
+                                                return txtCotizaciï¿½nObligatoriaIcbf;
                                                 }
-                                                public void setTxtCotizaciónObligatoriaIcbf(InputText txtCotizaciónObligatoriaIcbf) {
-                                                this.txtCotizaciónObligatoriaIcbf = txtCotizaciónObligatoriaIcbf;
+                                                public void setTxtCotizaciï¿½nObligatoriaIcbf(InputText txtCotizaciï¿½nObligatoriaIcbf) {
+                                                this.txtCotizaciï¿½nObligatoriaIcbf = txtCotizaciï¿½nObligatoriaIcbf;
                                                 }
                                                                                             public InputText getTxtDetaPlanPrimeraEps() {
                                                 return txtDetaPlanPrimeraEps;
@@ -1605,7 +1605,7 @@ private IBusinessDelegatorView businessDelegatorView;
 													}	
 												
 												}catch(Exception e){
-												 e.printStackTrace();
+													log.debug("context", e);
 												}
 												return data;
 											}
