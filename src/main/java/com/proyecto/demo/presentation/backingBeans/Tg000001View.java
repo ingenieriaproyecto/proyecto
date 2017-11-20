@@ -1,19 +1,20 @@
 package com.proyecto.demo.presentation.backingBeans;
 
+import com.mysql.jdbc.log.Log;
 import com.proyecto.demo.exceptions.*;
 import com.proyecto.demo.modelo.*;
 import com.proyecto.demo.modelo.dto.Tg000001DTO;
 import com.proyecto.demo.presentation.businessDelegate.*;
 import com.proyecto.demo.utilities.*;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.primefaces.component.calendar.*;
 import org.primefaces.component.commandbutton.CommandButton;
 import org.primefaces.component.inputtext.InputText;
 
 import org.primefaces.event.RowEditEvent;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 import java.io.Serializable;
 
@@ -45,7 +46,8 @@ import javax.faces.event.ActionEvent;
 @ViewScoped
 public class Tg000001View implements Serializable {
     private static final long serialVersionUID = 1L;
-    private static final Logger log = LoggerFactory.getLogger(Tg000001View.class);
+    private Logger log = LoggerFactory.getLogger(Tg000001View.class);
+    
     private InputText txtNomBanco;
     private InputText txtCodBanco;
     private CommandButton btnSave;
@@ -270,7 +272,7 @@ public class Tg000001View implements Serializable {
                 data = businessDelegatorView.getDataTg000001();
             }
         } catch (Exception e) {
-            e.printStackTrace();
+        	    	 log.debug("context", e);
         }
 
         return data;
