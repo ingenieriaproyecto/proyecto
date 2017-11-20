@@ -10,22 +10,21 @@ import org.primefaces.component.calendar.*;
 import org.primefaces.component.commandbutton.CommandButton;
 import org.primefaces.component.inputtext.InputText;
 
-import org.primefaces.event.RowEditEvent;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.Serializable;
 
-import java.sql.*;
+
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
-import java.util.ArrayList;
+
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
+
 import java.util.TimeZone;
 
 import javax.faces.application.FacesMessage;
@@ -1629,7 +1628,7 @@ public class Tg000003View implements Serializable {
                 data = businessDelegatorView.getDataTg000003();
             }
         } catch (Exception e) {
-            e.printStackTrace();
+        	log.debug("context", e);
         }
 
         return data;

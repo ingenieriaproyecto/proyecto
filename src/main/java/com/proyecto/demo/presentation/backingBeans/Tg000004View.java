@@ -6,33 +6,27 @@ import com.proyecto.demo.modelo.dto.Tg000004DTO;
 import com.proyecto.demo.presentation.businessDelegate.*;
 import com.proyecto.demo.utilities.*;
 
-import org.primefaces.component.calendar.*;
+
 import org.primefaces.component.commandbutton.CommandButton;
 import org.primefaces.component.inputtext.InputText;
 
-import org.primefaces.event.RowEditEvent;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.Serializable;
 
-import java.sql.*;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Set;
+
 import java.util.TimeZone;
 
-import javax.faces.application.FacesMessage;
+
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.ViewScoped;
-import javax.faces.context.FacesContext;
+
 import javax.faces.event.ActionEvent;
 
 
@@ -270,7 +264,7 @@ public class Tg000004View implements Serializable {
                 data = businessDelegatorView.getDataTg000004();
             }
         } catch (Exception e) {
-            e.printStackTrace();
+        	log.debug("context", e);
         }
 
         return data;
