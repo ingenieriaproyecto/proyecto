@@ -125,7 +125,7 @@ public class Tlp00003View implements Serializable {
 
         return "";
     }
-
+    /*
     public void listener_txtId() {
         try {
             Tlp00003Id id = new Tlp00003Id();
@@ -176,7 +176,7 @@ public class Tlp00003View implements Serializable {
             }
         }
     }
-
+*/
     public String action_edit(ActionEvent evt) {
         selectedTlp00003 = (Tlp00003DTO) (evt.getComponent().getAttributes()
                                              .get("selectedTlp00003"));

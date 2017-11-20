@@ -44,7 +44,6 @@ public class Tg000008View implements Serializable {
     private InputText txtChequeprimer;
     private InputText txtConsignacionClientes;
     private InputText txtNcheques;
-    private Tg000008Id id = new Tg000008Id();
     private InputText txtNumcuenta;
     private InputText txtTipoCuenta;
     private InputText txtCodBanco_Tg000001;
@@ -143,10 +142,10 @@ public class Tg000008View implements Serializable {
 
         return "";
     }
-
+/*
     public void listener_txtId() {
         try {
-           
+        	Tg000008Id id = new Tg000008Id();
             id.setCodCuenta((((txtCodCuenta.getValue()) == null) ||
                 (txtCodCuenta.getValue()).equals("")) ? null
                                                       : FacesUtils.checkString(
@@ -206,7 +205,7 @@ public class Tg000008View implements Serializable {
             }
         }
     }
-
+*/
     public String action_edit(ActionEvent evt) {
         selectedTg000008 = (Tg000008DTO) (evt.getComponent().getAttributes()
                                              .get("selectedTg000008"));

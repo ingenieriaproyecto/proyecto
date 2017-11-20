@@ -354,7 +354,7 @@ public class Tlp00001View implements Serializable {
                     .addMessage("",
             new FacesMessage("Selected Date " + dateFormat.format(inputDate)));
     }
-
+    /*
     public void listener_txtId() {
         try {
             Tlp00001Id id = new Tlp00001Id();
@@ -490,7 +490,7 @@ public class Tlp00001View implements Serializable {
             }
         }
     }
-
+*/
     public String action_edit(ActionEvent evt) {
         selectedTlp00001 = (Tlp00001DTO) (evt.getComponent().getAttributes()
                                              .get("selectedTlp00001"));

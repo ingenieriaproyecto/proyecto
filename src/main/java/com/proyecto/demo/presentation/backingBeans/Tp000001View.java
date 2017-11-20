@@ -676,7 +676,7 @@ public class Tp000001View implements Serializable {
         FacesContext.getCurrentInstance()
                     .addMessage("",
             new FacesMessage("Selected Date " + dateFormat.format(inputDate)));
-    }
+    }/*
 
     public void listener_txtId() {
         try {
@@ -958,7 +958,7 @@ public class Tp000001View implements Serializable {
             }
         }
     }
-
+*/
     public String action_edit(ActionEvent evt) {
         selectedTp000001 = (Tp000001DTO) (evt.getComponent().getAttributes()
                                              .get("selectedTp000001"));

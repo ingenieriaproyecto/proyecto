@@ -166,7 +166,7 @@ public class Tg000011View implements Serializable {
         }
 
         return "";
-    }
+    }/*
 
     public void listener_txtId() {
         try {
@@ -239,7 +239,7 @@ public class Tg000011View implements Serializable {
             }
         }
     }
-
+*/
     public String action_edit(ActionEvent evt) {
         selectedTg000011 = (Tg000011DTO) (evt.getComponent().getAttributes()
                                              .get("selectedTg000011"));

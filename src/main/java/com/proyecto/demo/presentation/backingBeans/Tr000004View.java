@@ -607,7 +607,7 @@ public class Tr000004View implements Serializable {
                     .addMessage("",
             new FacesMessage("Selected Date " + dateFormat.format(inputDate)));
     }
-
+    /*
     public void listener_txtId() {
         try {
             Tr000004Id id = new Tr000004Id();
@@ -880,7 +880,7 @@ public class Tr000004View implements Serializable {
             }
         }
     }
-
+*/
     public String action_edit(ActionEvent evt) {
         selectedTr000004 = (Tr000004DTO) (evt.getComponent().getAttributes()
                                              .get("selectedTr000004"));

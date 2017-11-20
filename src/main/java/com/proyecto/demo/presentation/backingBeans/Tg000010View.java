@@ -101,7 +101,7 @@ public class Tg000010View implements Serializable {
 
         return "";
     }
-
+    /*
     public void listener_txtId() {
         try {
             Tg000010Id id = new Tg000010Id();
@@ -140,7 +140,7 @@ public class Tg000010View implements Serializable {
             }
         }
     }
-
+*/
     public String action_edit(ActionEvent evt) {
         selectedTg000010 = (Tg000010DTO) (evt.getComponent().getAttributes()
                                              .get("selectedTg000010"));
