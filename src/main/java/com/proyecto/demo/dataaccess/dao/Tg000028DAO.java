@@ -3,28 +3,18 @@ package com.proyecto.demo.dataaccess.dao;
 import com.proyecto.demo.dataaccess.api.HibernateDaoImpl;
 import com.proyecto.demo.modelo.Tg000028;
 
-import org.hibernate.Query;
+
 import org.hibernate.SessionFactory;
 
-import org.hibernate.criterion.Example;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Scope;
 
-import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
 
 import org.springframework.stereotype.Repository;
 
-import java.math.BigDecimal;
 
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
 
 import javax.annotation.Resource;
 
@@ -43,7 +33,7 @@ import javax.annotation.Resource;
 @Repository("Tg000028DAO")
 public class Tg000028DAO extends HibernateDaoImpl<Tg000028, String>
     implements ITg000028DAO {
-    private static final Logger log = LoggerFactory.getLogger(Tg000028DAO.class);
+   
     @Resource
     private SessionFactory sessionFactory;
 
