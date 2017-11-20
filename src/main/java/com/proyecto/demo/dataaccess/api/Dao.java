@@ -6,14 +6,14 @@ import java.util.List;
 
 
 
-public interface Dao<T, PK extends Serializable> {
+public interface Dao<T, pK extends Serializable> {
   
     void save(T newEntity) throws DaoException;
 
-    T findById(PK id);
+    T findById(pK id);
 
   
-    T load(PK id);
+    T load(pK id);
 
 
     void update(T entity) throws DaoException;
@@ -37,7 +37,7 @@ public interface Dao<T, PK extends Serializable> {
         throws DaoException;
 
   
-    void deleteById(PK id) throws DaoException;
+    void deleteById(pK id) throws DaoException;
 
  
     List<T> findByProperty(String propertyName, Object value);
