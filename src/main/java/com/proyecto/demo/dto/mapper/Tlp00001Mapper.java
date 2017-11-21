@@ -5,8 +5,7 @@ import com.proyecto.demo.modelo.Tlp00001;
 import com.proyecto.demo.modelo.control.*;
 import com.proyecto.demo.modelo.dto.Tlp00001DTO;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -28,7 +27,7 @@ import java.util.List;
 @Component
 @Scope("singleton")
 public class Tlp00001Mapper implements ITlp00001Mapper {
-    private static final Logger log = LoggerFactory.getLogger(Tlp00001Mapper.class);
+   
 
     /**
     * Logic injected by Spring that manages Tg000001 entities

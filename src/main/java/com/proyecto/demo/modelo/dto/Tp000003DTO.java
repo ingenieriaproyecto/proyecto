@@ -1,13 +1,10 @@
 package com.proyecto.demo.modelo.dto;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 import java.io.Serializable;
 
-import java.sql.*;
 
-import java.util.Date;
 
 
 /**
@@ -18,7 +15,7 @@ import java.util.Date;
 */
 public class Tp000003DTO implements Serializable {
     private static final long serialVersionUID = 1L;
-    private static final Logger log = LoggerFactory.getLogger(Tp000003DTO.class);
+  
     private String codEps;
     private String codigoEps;
     private String direccionEps;

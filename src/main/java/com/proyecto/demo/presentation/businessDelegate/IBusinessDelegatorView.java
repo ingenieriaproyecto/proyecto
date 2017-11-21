@@ -31,52 +31,6 @@ import com.proyecto.demo.modelo.Tp000005;
 import com.proyecto.demo.modelo.Tp000006;
 import com.proyecto.demo.modelo.Tr000004;
 import com.proyecto.demo.modelo.Tr000004Id;
-import com.proyecto.demo.modelo.control.ITg000001Logic;
-import com.proyecto.demo.modelo.control.ITg000002Logic;
-import com.proyecto.demo.modelo.control.ITg000003Logic;
-import com.proyecto.demo.modelo.control.ITg000004Logic;
-import com.proyecto.demo.modelo.control.ITg000006Logic;
-import com.proyecto.demo.modelo.control.ITg000008Logic;
-import com.proyecto.demo.modelo.control.ITg000010Logic;
-import com.proyecto.demo.modelo.control.ITg000011Logic;
-import com.proyecto.demo.modelo.control.ITg000012Logic;
-import com.proyecto.demo.modelo.control.ITg000013Logic;
-import com.proyecto.demo.modelo.control.ITg000019Logic;
-import com.proyecto.demo.modelo.control.ITg000026Logic;
-import com.proyecto.demo.modelo.control.ITg000028Logic;
-import com.proyecto.demo.modelo.control.ITg000029Logic;
-import com.proyecto.demo.modelo.control.ITlp00001Logic;
-import com.proyecto.demo.modelo.control.ITlp00002Logic;
-import com.proyecto.demo.modelo.control.ITlp00003Logic;
-import com.proyecto.demo.modelo.control.ITp000001Logic;
-import com.proyecto.demo.modelo.control.ITp000003Logic;
-import com.proyecto.demo.modelo.control.ITp000004Logic;
-import com.proyecto.demo.modelo.control.ITp000005Logic;
-import com.proyecto.demo.modelo.control.ITp000006Logic;
-import com.proyecto.demo.modelo.control.ITr000004Logic;
-import com.proyecto.demo.modelo.control.Tg000001Logic;
-import com.proyecto.demo.modelo.control.Tg000002Logic;
-import com.proyecto.demo.modelo.control.Tg000003Logic;
-import com.proyecto.demo.modelo.control.Tg000004Logic;
-import com.proyecto.demo.modelo.control.Tg000006Logic;
-import com.proyecto.demo.modelo.control.Tg000008Logic;
-import com.proyecto.demo.modelo.control.Tg000010Logic;
-import com.proyecto.demo.modelo.control.Tg000011Logic;
-import com.proyecto.demo.modelo.control.Tg000012Logic;
-import com.proyecto.demo.modelo.control.Tg000013Logic;
-import com.proyecto.demo.modelo.control.Tg000019Logic;
-import com.proyecto.demo.modelo.control.Tg000026Logic;
-import com.proyecto.demo.modelo.control.Tg000028Logic;
-import com.proyecto.demo.modelo.control.Tg000029Logic;
-import com.proyecto.demo.modelo.control.Tlp00001Logic;
-import com.proyecto.demo.modelo.control.Tlp00002Logic;
-import com.proyecto.demo.modelo.control.Tlp00003Logic;
-import com.proyecto.demo.modelo.control.Tp000001Logic;
-import com.proyecto.demo.modelo.control.Tp000003Logic;
-import com.proyecto.demo.modelo.control.Tp000004Logic;
-import com.proyecto.demo.modelo.control.Tp000005Logic;
-import com.proyecto.demo.modelo.control.Tp000006Logic;
-import com.proyecto.demo.modelo.control.Tr000004Logic;
 import com.proyecto.demo.modelo.dto.Tg000001DTO;
 import com.proyecto.demo.modelo.dto.Tg000002DTO;
 import com.proyecto.demo.modelo.dto.Tg000003DTO;
@@ -100,18 +54,8 @@ import com.proyecto.demo.modelo.dto.Tp000004DTO;
 import com.proyecto.demo.modelo.dto.Tp000005DTO;
 import com.proyecto.demo.modelo.dto.Tp000006DTO;
 import com.proyecto.demo.modelo.dto.Tr000004DTO;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
-import org.springframework.context.annotation.Scope;
-
-import org.springframework.stereotype.Service;
-
-import java.math.BigDecimal;
-
-import java.util.Date;
 import java.util.List;
-import java.util.Set;
+
 
 
 /**

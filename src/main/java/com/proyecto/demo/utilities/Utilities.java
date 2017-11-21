@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.commons.validator.EmailValidator;
+
 
 /**
  * @author Zathura Code Generator http://zathuracode.org/
@@ -21,7 +21,7 @@ import org.apache.commons.validator.EmailValidator;
  */
 public class Utilities {
 
-	private static final Logger log = LoggerFactory.getLogger(Utilities.class);
+
 
 	public static boolean isNumeric(String word) {
 		boolean ret = false;

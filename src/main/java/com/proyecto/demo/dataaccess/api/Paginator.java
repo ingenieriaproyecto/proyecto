@@ -1,7 +1,6 @@
 package com.proyecto.demo.dataaccess.api;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 import java.io.Serializable;
 
@@ -16,7 +15,7 @@ import java.io.Serializable;
  */
 public class Paginator implements Serializable {
     private static final long serialVersionUID = 1L;
-    private static final Logger log = LoggerFactory.getLogger(Paginator.class);
+   
     private int firstResult;
     private int maxResults;
 

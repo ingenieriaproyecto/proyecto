@@ -2,7 +2,6 @@ package com.proyecto.demo.modelo;
 
 import org.hibernate.validator.constraints.*;
 
-import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

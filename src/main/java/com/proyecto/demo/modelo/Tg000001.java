@@ -1,8 +1,6 @@
 package com.proyecto.demo.modelo;
 
-import org.hibernate.validator.constraints.*;
 
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -20,7 +18,7 @@ import javax.validation.constraints.*;
 */
 @Entity
 @Table(name = "tg000001", schema = "${schema}")
-public class Tg000001 implements java.io.Serializable {
+public class  Tg000001 implements java.io.Serializable {
     @Id
     @NotNull
     private String codBanco;

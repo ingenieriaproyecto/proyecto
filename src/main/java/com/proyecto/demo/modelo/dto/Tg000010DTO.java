@@ -1,15 +1,6 @@
 package com.proyecto.demo.modelo.dto;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.Serializable;
-
-import java.sql.*;
-
-import java.util.Date;
-
-
 /**
 *
 * @author Zathura Code Generator http://zathuracode.org
@@ -18,7 +9,7 @@ import java.util.Date;
 */
 public class Tg000010DTO implements Serializable {
     private static final long serialVersionUID = 1L;
-    private static final Logger log = LoggerFactory.getLogger(Tg000010DTO.class);
+   
     private String codSucursal;
     private String codEmpresa;
     private String nomSucursal;

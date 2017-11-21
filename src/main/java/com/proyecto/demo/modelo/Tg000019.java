@@ -1,8 +1,6 @@
 package com.proyecto.demo.modelo;
 
-import org.hibernate.validator.constraints.*;
 
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 

@@ -1,7 +1,6 @@
 package com.proyecto.demo.exceptions;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 /**
  * @author Zathura Code Generator http://zathuracode.org/
@@ -11,7 +10,7 @@ import org.slf4j.LoggerFactory;
 public class ZMessManager extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 	
-	private static final Logger log = LoggerFactory.getLogger(ZMessManager.class);
+	
 
 	public final static String ALL = "All ";
 	public final static String ENTCHILD = "related tables(childs)";

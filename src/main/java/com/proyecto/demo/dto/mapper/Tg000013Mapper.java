@@ -1,14 +1,12 @@
 package com.proyecto.demo.dto.mapper;
 
-import com.proyecto.demo.modelo.*;
+
 import com.proyecto.demo.modelo.Tg000013;
-import com.proyecto.demo.modelo.control.*;
+
 import com.proyecto.demo.modelo.dto.Tg000013DTO;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 
 import org.springframework.context.annotation.Scope;
 
@@ -28,7 +26,7 @@ import java.util.List;
 @Component
 @Scope("singleton")
 public class Tg000013Mapper implements ITg000013Mapper {
-    private static final Logger log = LoggerFactory.getLogger(Tg000013Mapper.class);
+    
 
     @Transactional(readOnly = true)
     public Tg000013DTO tg000013ToTg000013DTO(Tg000013 tg000013)

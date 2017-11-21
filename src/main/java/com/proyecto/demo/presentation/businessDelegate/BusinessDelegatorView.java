@@ -54,29 +54,6 @@ import com.proyecto.demo.modelo.control.ITp000004Logic;
 import com.proyecto.demo.modelo.control.ITp000005Logic;
 import com.proyecto.demo.modelo.control.ITp000006Logic;
 import com.proyecto.demo.modelo.control.ITr000004Logic;
-import com.proyecto.demo.modelo.control.Tg000001Logic;
-import com.proyecto.demo.modelo.control.Tg000002Logic;
-import com.proyecto.demo.modelo.control.Tg000003Logic;
-import com.proyecto.demo.modelo.control.Tg000004Logic;
-import com.proyecto.demo.modelo.control.Tg000006Logic;
-import com.proyecto.demo.modelo.control.Tg000008Logic;
-import com.proyecto.demo.modelo.control.Tg000010Logic;
-import com.proyecto.demo.modelo.control.Tg000011Logic;
-import com.proyecto.demo.modelo.control.Tg000012Logic;
-import com.proyecto.demo.modelo.control.Tg000013Logic;
-import com.proyecto.demo.modelo.control.Tg000019Logic;
-import com.proyecto.demo.modelo.control.Tg000026Logic;
-import com.proyecto.demo.modelo.control.Tg000028Logic;
-import com.proyecto.demo.modelo.control.Tg000029Logic;
-import com.proyecto.demo.modelo.control.Tlp00001Logic;
-import com.proyecto.demo.modelo.control.Tlp00002Logic;
-import com.proyecto.demo.modelo.control.Tlp00003Logic;
-import com.proyecto.demo.modelo.control.Tp000001Logic;
-import com.proyecto.demo.modelo.control.Tp000003Logic;
-import com.proyecto.demo.modelo.control.Tp000004Logic;
-import com.proyecto.demo.modelo.control.Tp000005Logic;
-import com.proyecto.demo.modelo.control.Tp000006Logic;
-import com.proyecto.demo.modelo.control.Tr000004Logic;
 import com.proyecto.demo.modelo.dto.Tg000001DTO;
 import com.proyecto.demo.modelo.dto.Tg000002DTO;
 import com.proyecto.demo.modelo.dto.Tg000003DTO;
@@ -102,8 +79,7 @@ import com.proyecto.demo.modelo.dto.Tp000006DTO;
 import com.proyecto.demo.modelo.dto.Tr000004DTO;
 import com.proyecto.demo.presentation.businessDelegate.IBusinessDelegatorView;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -111,13 +87,9 @@ import org.springframework.context.annotation.Scope;
 
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
 
-import java.sql.*;
-
-import java.util.Date;
 import java.util.List;
-import java.util.Set;
+
 
 
 /**
@@ -164,7 +136,7 @@ import java.util.Set;
 @Scope("singleton")
 @Service("BusinessDelegatorView")
 public class BusinessDelegatorView implements IBusinessDelegatorView {
-    private static final Logger log = LoggerFactory.getLogger(BusinessDelegatorView.class);
+    
     @Autowired
     private ITg000001Logic tg000001Logic;
     @Autowired

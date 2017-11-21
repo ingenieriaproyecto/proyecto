@@ -1,6 +1,6 @@
 package com.proyecto.demo.modelo;
 
-import java.util.Date;
+
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
